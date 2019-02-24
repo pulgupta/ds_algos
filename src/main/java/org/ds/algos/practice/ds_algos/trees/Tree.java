@@ -16,11 +16,13 @@ public class Tree {
 	}
 	
 	/* This is the tree we will be using
+	 *
 	 *		1
 	 *	   / \
 	 *    2   5
 	 *   / \
 	 *  3  4
+	 *  
 	 */
 	public Node returnTree() {
 		
