@@ -4,10 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 import org.ds.algos.practice.ds_algos.trees.Tree.Node;
 
-public class MaximumElement {
+public class MaximumElementAndCountLeaf {
 	/**
 	 * Finding the largest node in a tree.
-	 * As this being a normal tree we can't use the binary approach in it
+	 * As this being a normal tree we can't use the binary search tree approach here
 	 * @param root : Root node of the tree
 	 * @return : Returns the largest node
 	 */
@@ -16,6 +16,8 @@ public class MaximumElement {
 		maximum = root.data;
 		Queue<Node> queue = new LinkedList<>();
 		queue.offer(root);
+		// Level order traversal to traverse the whole tree and give us the 
+		// largest element
 		while(!queue.isEmpty()){
 			Node node = queue.poll();
 			if(node.data>maximum)
@@ -52,7 +54,7 @@ public class MaximumElement {
 	}
 	
 	public static void main(String[] args) {
-		MaximumElement me = new MaximumElement();
+		MaximumElementAndCountLeaf me = new MaximumElementAndCountLeaf();
 		System.out.println(me.maxElement(new Tree().createTree()));
 		System.out.println(me.numberOfLeaves(new Tree().createTree()));
 	}

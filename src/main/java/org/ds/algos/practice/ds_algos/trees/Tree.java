@@ -23,7 +23,7 @@ public class Tree {
 		}
 	}
 	
-	/* This is the tree we will be using
+	/* This is the tree we will be using for most of our testing
 	 *
 	 *		1
 	 *	   / \
@@ -64,7 +64,7 @@ public class Tree {
 	    else
 	    	return dright+1;
 	}
-	
+	// Just for testing
 	public static void main(String args[]) {
 		Tree tree = new Tree();
 		Node root = tree.createTree();
