@@ -24,9 +24,9 @@ class Tracker {
 public class TreeParameter {
 
 	Tree tree = new Tree();
-	Node root = tree.returnTree();
+	Node root = tree.createTree();
 	int temp, count = 1;
-	List<Tracker> solution = new ArrayList<Tracker>();
+	List<Tracker> solution = new ArrayList<Tracker>(3);
 	Queue<Node> inorderQueue = new LinkedList<Node>();
 	
 	
@@ -37,17 +37,18 @@ public class TreeParameter {
 		solution.add(new Tracker(root, null));
 		while(!inorderQueue.isEmpty()) {
 			height++;
+			System.out.println(height);
 			solution.add(new Tracker());
-			Node itr = inorderQueue.poll();
 			temp = 0;
 			for(int i=0;i<count;i++) { // This loop will run for all the nodes in the same level
+				Node itr = inorderQueue.poll();
 				if(itr.left!=null) {
 					inorderQueue.add(itr.left);
 					if(solution.get(height).left==null)
 						solution.get(height).left = itr.left;
 					temp++;
 				}
-				if(itr.left!=null) {
+				if(itr.right!=null) {
 					inorderQueue.add(itr.right);
 					solution.get(height).right = itr.right;
 					temp++;
@@ -61,8 +62,8 @@ public class TreeParameter {
 		TreeParameter treeParameter = new TreeParameter();
 		treeParameter.leftAndRightParemeter(treeParameter.root);
 		for(Tracker tracker: treeParameter.solution) {
-			System.out.println(tracker.left!=null?tracker.left.data:"X"); 			
-			System.out.println(tracker.right!=null? tracker.right.data:"X");
+			System.out.println(tracker.left!=null?tracker.left.data:""); 			
+			System.out.println(tracker.right!=null? tracker.right.data:"");
 		}
 		System.out.println("Execution Completed");
 	}

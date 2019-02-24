@@ -53,7 +53,7 @@ public class MaximumElement {
 	
 	public static void main(String[] args) {
 		MaximumElement me = new MaximumElement();
-		System.out.println(me.maxElement(new Tree().returnTree()));
-		System.out.println(me.numberOfLeaves(new Tree().returnTree()));
+		System.out.println(me.maxElement(new Tree().createTree()));
+		System.out.println(me.numberOfLeaves(new Tree().createTree()));
 	}
 }

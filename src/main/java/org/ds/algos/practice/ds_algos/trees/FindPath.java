@@ -29,7 +29,7 @@ public class FindPath {
 	public static void main(String[] args) {
 		FindPath fp = new FindPath();
 		Tree tree = new Tree();
-		Node rootNode = tree.returnTree();
+		Node rootNode = tree.createTree();
 		fp.findPath(rootNode, 4);
 		for (Node node : fp.path) {
 			System.out.println(node.data);
