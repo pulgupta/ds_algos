@@ -1,19 +1,23 @@
 package org.ds.algos.practice.ds_algos.graphs;
 
-
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Scanner;
 
 /**
+ * VERIFIED SOLUTION ON HACKER RANK AND ALL TEST CASES ARE PASSING
+ * https://www.hackerrank.com/challenges/dijkstrashortreach/problem
+ */
+/**
  * INPUT FORMAT 
-1
-4 4
-1 2 24
+1 // Number of test cases
+4 4 // Nodes and Edges count
+1 2 24 // Starting edge, ending edge and the distance
 1 4 20
 3 1 3
 4 3 12
-1
+1 // Starting edge to calculate the distances
+
  * @author pulgupta
  */
 class Distance implements Comparable<Distance>{
@@ -25,8 +29,6 @@ class Distance implements Comparable<Distance>{
 		this.node = node;
 		this.distance = distance;
 	}
-
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -34,8 +36,6 @@ class Distance implements Comparable<Distance>{
 		result = prime * result + node;
 		return result;
 	}
-
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -45,12 +45,10 @@ class Distance implements Comparable<Distance>{
 		if (!(obj instanceof Distance))
 			return false;
 		Distance other = (Distance) obj;
-		if (node != other.node)
+		if (node != other.node) // Equality is only based on the node name
 			return false;
 		return true;
 	}
-
-
 	@Override
 	public int compareTo(Distance o) {
 		return this.distance - o.distance;
@@ -60,12 +58,12 @@ class Distance implements Comparable<Distance>{
 public class Dijkstra {
 
 	//It will contain the final shortest paths
-	private static int[] d;
+	private static int[] solution;
 	private static int[][] adjMatrix;
 	private static boolean[] visited;
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		int T = in.nextInt();
+		int T = in.nextInt(); // Number of test cases
 		//Execute a loop for each test case
 		for(int t=0;t<T;t++){
 			int N = in.nextInt(); 	//Nodes
@@ -81,6 +79,8 @@ public class Dijkstra {
 				int n1 = in.nextInt();
 				int n2 = in.nextInt();
 				int w = in.nextInt();
+				// Because this is a non directional graph we are putting weight for both
+				// a->b and b->a 
 				if(adjMatrix[n1-1][n2-1] > w) {
 					adjMatrix[n1-1][n2-1] = w;
 					adjMatrix[n2-1][n1-1] = w;
@@ -88,18 +88,20 @@ public class Dijkstra {
 			}
 			
 			int s = in.nextInt();
-			d = new int[N];
+			solution = new int[N];
 			visited = new boolean[N];
 			dijkstra(s-1, N);
 		}
 		in.close();
 	}
 	public static void dijkstra(int s, int N){
+		// To start with all the distances are marked to max value
 		for (int i=0;i<N;i++) {
-			d[i] = Integer.MAX_VALUE;
+			solution[i] = Integer.MAX_VALUE;
 		}
-		d[s] = 0;
+		solution[s] = 0;
 		Queue<Distance> queue = new PriorityQueue<>();
+		// Add the starting element and the distance to itself as 0
 		queue.offer(new Distance(s,0));
 		
 		while(!queue.isEmpty()) {
@@ -110,21 +112,34 @@ public class Dijkstra {
 			for(int i=0;i<N;i++) {
 				if(adjMatrix[node][i]!=Integer.MAX_VALUE && s!=i) {
 
-					if(d[i]> d[node] + adjMatrix[node][i]) 
-						d[i]= d[node] + adjMatrix[node][i];
-					
-					if(!visited[i] && !queue.contains(new Distance(i, d[i])))
-						queue.add(new Distance(i, d[i]));
+					if(solution[i]> solution[node] + adjMatrix[node][i]) 
+						solution[i]= solution[node] + adjMatrix[node][i];
+					// If the target node i is not in the queue we will add it with its updated distance
+					Distance newNode = new Distance(i, solution[i]);
+					if(!visited[i] && !queue.contains(newNode)) {
+						queue.add(newNode);
+					}
+					else if (!visited[i] && queue.contains(newNode)) {
+						boolean found=false;
+						for(Distance d: queue) {
+							if(d.equals(newNode) && d.distance > solution[i])
+								found = true;
+						}
+						if(found==true) {
+							queue.remove(newNode);
+							queue.add(newNode);	
+						}
+					}
 				}
 			}
 		}
 		
 		for (int i=0;i<N;i++) {
 			if(i!=s) {
-				if(d[i]!=Integer.MAX_VALUE)
-					System.out.print(d[i] + " ");
+				if(solution[i]!=Integer.MAX_VALUE)
+					System.out.print(solution[i] + " ");
 				else
-					System.out.print(" " + -1 + " ");
+					System.out.print( -1 + " ");
 			}
 			
 		}
