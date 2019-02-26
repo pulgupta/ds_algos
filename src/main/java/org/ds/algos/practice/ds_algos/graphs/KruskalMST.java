@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds_algos;
+package org.ds.algos.practice.ds_algos.graphs;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
