@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds_algos.ds.other;
+package org.ds.algos.practice.ds_algos;
 
 public class HashFunction {
 

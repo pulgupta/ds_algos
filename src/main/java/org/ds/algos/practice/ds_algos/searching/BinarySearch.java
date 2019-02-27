@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds_algos.search;
+package org.ds.algos.practice.ds_algos.searching;
 
 public class BinarySearch {
 	static boolean found;

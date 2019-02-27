@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds_algos.ds.other;
+package org.ds.algos.practice.ds_algos;
 
 import java.util.HashMap;
 import java.util.Map;
