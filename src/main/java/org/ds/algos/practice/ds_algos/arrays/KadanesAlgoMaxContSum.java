@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds_algos;
+package org.ds.algos.practice.ds_algos.arrays;
 
 /**
  * Kadane's Algorithm is used for finding the largest sum of a continuous sub array in an array.

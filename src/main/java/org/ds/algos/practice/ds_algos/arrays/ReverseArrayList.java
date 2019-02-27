@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds_algos;
+package org.ds.algos.practice.ds_algos.arrays;
 
 import java.util.ArrayList;
 import java.util.List;

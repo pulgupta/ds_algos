@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds_algos;
+package org.ds.algos.practice.ds_algos.arrays;
 
 /**
  * This class checks if the array is sorted or not using recursion
