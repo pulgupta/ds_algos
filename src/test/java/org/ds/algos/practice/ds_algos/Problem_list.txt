@@ -2,8 +2,8 @@ Subarray with given sum - Implemented
 Kadane’s Algorithm - Implemented
 Missing number in array
 Subarray with given sum - Implemented
-Sort an array of 0s, 1s and 2s
-Equilibrium point
+Sort an array of 0s, 1s and 2s - Implemented
+Equilibrium point - Implemented
 Maximum sum increasing subsequence
 Leaders in an array
 Minimum Platforms
