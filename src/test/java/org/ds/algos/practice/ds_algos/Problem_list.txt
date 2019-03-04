@@ -4,7 +4,7 @@ Missing number in array
 Subarray with given sum - Implemented
 Sort an array of 0s, 1s and 2s - Implemented
 Equilibrium point - Implemented
-Maximum sum increasing subsequence
+Maximum sum increasing subsequence - Implemented
 Leaders in an array
 Minimum Platforms
 Maximum of all subarrays of size k
