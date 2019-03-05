@@ -1,13 +1,13 @@
 Subarray with given sum - Implemented
 Kadane’s Algorithm - Implemented
-Missing number in array
+Missing number in array - calculate series sum and subtract arry sum
 Subarray with given sum - Implemented
 Sort an array of 0s, 1s and 2s - Implemented
 Equilibrium point - Implemented
 Maximum sum increasing subsequence - Implemented
-Leaders in an array
-Minimum Platforms
-Maximum of all subarrays of size k
+Leaders in an array - easy
+Minimum Platforms - Understood
+Maximum of all subarrays of size k - Implemented
 Reverse array in groups
 K’th smallest element
 Trapping Rain Water
