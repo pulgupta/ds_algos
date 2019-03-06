@@ -33,7 +33,7 @@ Permutations of a given string
 Longest Palindrome in a String
 Recursively remove all adjacent duplicates
 Check if string is rotated by two places
-Roman Number to Integer
+Roman Number to Integer - understood
 Anagram
 Longest Common Substring
 Remove Duplicates
@@ -47,7 +47,7 @@ Solved the above? Go for some more Questions
 Linked List :
 
 Finding middle element in a linked list
-Reverse a linked list
+Reverse a linked list - Implemented
 Rotate a Linked List
 Reverse a Linked List in groups of given size
 Detect Loop in linked list
