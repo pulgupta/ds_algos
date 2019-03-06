@@ -85,7 +85,7 @@ Lowest Common Ancestor in a BST - Implemented
 Convert a given Binary Tree to Doubly Linked List
 Write Code to Determine if Two Trees are Identical or Not
 Given a binary tree, check whether it is a mirror of itself
-Height of Binary Tree
+Height of Binary Tree - Implemented
 Maximum Path Sum
 Diameter of a Binary Tree
 Number of leaf nodes
