@@ -48,6 +48,33 @@ public class Tree {
 		return node1;
 		
 	}
+	
+	/* This is a BST we will be using for most of our testing
+	 *
+	 *		4
+	 *	   / \
+	 *    2   5
+	 *   / \
+	 *  1  3
+	 *  
+	 */
+	public Node createBST() {
+		Node node1 = new Node(1);
+		Node node2 = new Node(2);
+		Node node3 = new Node(3);
+		Node node4 = new Node(4);
+		Node node5 = new Node(5);
+		
+		//Link all the nodes as per the above tree
+		node4.left = node2;
+		node4.right = node5;
+		node2.left = node1;
+		node2.right = node3;	
+		
+		return node4;
+		
+	}
+	
 	// This is a recursive way of calculating the height
 	// Get the height of the left sub tree and then the height of the right sub tree
 	// If left sub tree height is more then return 1+leftHeight else return 1+rightHeight 
@@ -64,6 +91,7 @@ public class Tree {
 	    else
 	    	return dright+1;
 	}
+	
 	// Just for testing
 	public static void main(String args[]) {
 		Tree tree = new Tree();

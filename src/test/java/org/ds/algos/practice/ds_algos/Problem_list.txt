@@ -8,8 +8,8 @@ Maximum sum increasing subsequence - Implemented
 Leaders in an array - easy
 Minimum Platforms - Understood
 Maximum of all subarrays of size k - Implemented
-Reverse array in groups
-K’th smallest element
+Reverse array in groups - Understood
+K’th smallest element 
 Trapping Rain Water
 Pythagorean Triplet
 Chocolate Distribution Problem
@@ -81,7 +81,7 @@ Print Bottom View of Binary Tree
 Print a Binary Tree in Vertical Order
 Level order traversal in spiral form
 Connect Nodes at Same Level
-Lowest Common Ancestor in a BST
+Lowest Common Ancestor in a BST - Implemented
 Convert a given Binary Tree to Doubly Linked List
 Write Code to Determine if Two Trees are Identical or Not
 Given a binary tree, check whether it is a mirror of itself
