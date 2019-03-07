@@ -88,7 +88,7 @@ Given a binary tree, check whether it is a mirror of itself
 Height of Binary Tree - Implemented
 Maximum Path Sum
 Diameter of a Binary Tree
-Number of leaf nodes - Understood
+Number of leaf nodes - Implemented
 Check if given Binary Tree is Height Balanced or Not
 Serialize and Deserialize a Binary Tree
 Solved the above? Go for some more Questions

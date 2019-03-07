@@ -25,11 +25,11 @@ public class Tree {
 	
 	/* This is the tree we will be using for most of our testing
 	 *
-	 *		1
-	 *	   / \
-	 *    2   5
-	 *   / \
-	 *  3  4
+	 *		1      |      1
+	 *	   / \     |     / \
+	 *    2   5    |    5   2
+	 *   / \       |       / \
+	 *  3   4      |      4   3
 	 *  
 	 */
 	public Node createTree() {
@@ -90,6 +90,14 @@ public class Tree {
 	    	return dleft+1;
 	    else
 	    	return dright+1;
+	}
+	
+	public void printInorder(Node root) {
+		if(root == null)
+			return;
+		printInorder(root.left);
+		System.out.print(root.data + " ");
+		printInorder(root.right);
 	}
 	
 	// Just for testing
