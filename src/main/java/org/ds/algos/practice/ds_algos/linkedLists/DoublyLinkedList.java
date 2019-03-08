@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds_algos.linkedList;
+package org.ds.algos.practice.ds_algos.linkedLists;
 
 public class DoublyLinkedList {
 
