@@ -1,6 +1,6 @@
-package org.ds.algos.practice.ds_algos.linkedlists;
+package org.ds.algos.practice.ds_algos.linkedLists;
 
-import org.ds.algos.practice.ds_algos.linkedlists.LinkedList.Node;
+import org.ds.algos.practice.ds_algos.linkedLists.LinkedList.Node;
 
 public class ReverseALinkedList {
 

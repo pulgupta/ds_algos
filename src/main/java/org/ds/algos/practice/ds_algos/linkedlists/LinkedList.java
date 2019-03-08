@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds_algos.linkedlists;
+package org.ds.algos.practice.ds_algos.linkedLists;
 
 public final class LinkedList {
 	
