@@ -27,8 +27,8 @@ Solved the above? Go for some more Questions
 
 String :
 
-Parenthesis Checker
-Reverse words in a given string
+Parenthesis Checker - Implemented
+Reverse words in a given string - Implemented
 Permutations of a given string
 Longest Palindrome in a String
 Recursively remove all adjacent duplicates
@@ -119,13 +119,13 @@ Array Pair Sum Divisibility Problem
 Longest consecutive subsequence
 Array Subset of another array
 Find all pairs with a given sum
-Find first repeated character
-Zero Sum Subarrays
+Find first repeated character - Easy
+Zero Sum Subarrays - Understood
 Minimum indexed character
 Check if two arrays are equal or not
 Uncommon characters
 Smallest window in a string containing all the characters of another string
-First element to occur k times
+First element to occur k times - Easy
 Check if frequencies can be equal
 Graph :
 
@@ -180,9 +180,9 @@ Optimal Strategy for a Game
 Shortest Common Supersequence
 Divide and Conquer :
 
-Binary Search
-Quick Sort
-Merge Sort
+Binary Search - Implemented
+Quick Sort - Implemented
+Merge Sort - Implemented
 Find the element that appears once in sorted array
 K-th element of two sorted Arrays
 Last index of One
