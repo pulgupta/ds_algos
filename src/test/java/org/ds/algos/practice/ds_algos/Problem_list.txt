@@ -46,16 +46,16 @@ Solved the above? Go for some more Questions
 
 Linked List :
 
-Finding middle element in a linked list
+Finding middle element in a linked list - Understood
 Reverse a linked list - Implemented
 Rotate a Linked List
 Reverse a Linked List in groups of given size
-Detect Loop in linked list
+Detect Loop in linked list - Understood
 Remove loop in Linked List
-n’th node from end of linked list
+n’th node from end of linked list - Easy
 Flattening a Linked List
-Merge two sorted linked lists
-Intersection point of two Linked Lists
+Merge two sorted linked lists 
+Intersection point of two Linked Lists  - Understood
 Pairwise swap of a linked list
 Add two numbers represented by linked lists
 Check if Linked List is Palindrome
