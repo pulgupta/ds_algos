@@ -164,8 +164,8 @@ Geek collects the balls
 Dynamic Programming :
 
 Longest Increasing Subsequence
-Longest Common Subsequence
-0 – 1 Knapsack Problem
+Longest Common Subsequence - Implemented
+0 – 1 Knapsack Problem - Implemented
 Minimum number of jumps
 Edit Distance
 Coin Change Problem
