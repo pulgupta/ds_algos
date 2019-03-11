@@ -89,7 +89,7 @@ Height of Binary Tree - Implemented
 Maximum Path Sum
 Diameter of a Binary Tree
 Number of leaf nodes - Implemented
-Check if given Binary Tree is Height Balanced or Not
+Check if given Binary Tree is Height Balanced or Not - Implemented(Not Perfect)
 Serialize and Deserialize a Binary Tree
 Solved the above? Go for some more Questions
 
