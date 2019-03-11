@@ -3,13 +3,14 @@ package org.ds.algos.practice.ds_algos.trees;
 import java.util.ArrayList;
 import java.util.List;
 
-class Node {
-	int data;
-	Node left;
-	Node right;
-}
-
 public class InorderTraversal {
+	
+	class Node {
+		int data;
+		Node left;
+		Node right;
+	}
+	
 	boolean checkBST(Node root) {
 		List<Integer> order = new ArrayList<>();
 		getInorder(root, order);

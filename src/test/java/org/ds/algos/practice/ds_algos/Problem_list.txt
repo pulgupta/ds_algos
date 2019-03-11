@@ -77,7 +77,7 @@ Tree :
 
 Print Left View of Binary Tree - Implemented as part of parameter
 Check for BST - Implemented
-Print Bottom View of Binary Tree
+Print Bottom View of Binary Tree - Similar to Parameter problem
 Print a Binary Tree in Vertical Order
 Level order traversal in spiral form - Understood
 Connect Nodes at Same Level
