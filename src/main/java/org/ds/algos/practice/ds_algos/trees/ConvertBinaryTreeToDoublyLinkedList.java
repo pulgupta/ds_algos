@@ -6,8 +6,7 @@ public class ConvertBinaryTreeToDoublyLinkedList {
 
 	public static Node treeToDoublyLinkedList(Node root) {
 		if(root == null)
-			return;
-		treeToDoublyLinkedList(root.left)
+			return null;
 		return null;
 	}
 	
