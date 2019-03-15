@@ -212,7 +212,6 @@ Maximum subset XOR
 Some More Questions on Arrays :
 
 Most frequent word in an array of strings
-Most frequent word in an array of strings
 Find Missing And Repeating
 Maximum Index
 Search in a Rotated Array
