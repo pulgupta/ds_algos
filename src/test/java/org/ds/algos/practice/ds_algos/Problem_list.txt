@@ -67,7 +67,7 @@ Stack and Queue :
 
 Next larger element
 Queue using two Stacks - Implemented
-Stack using two queues
+Stack using two queues - Similar to above
 Get minimum element from stack
 LRU Cache - Implemented
 Circular tour
@@ -157,7 +157,7 @@ Minimize the heights
 Minimize the sum of product
 Huffman Decoding
 Max length chain
-Minimum Spanning Tree
+Minimum Spanning Tree - Implemented
 Minimum Operations
 Shop in Candy Store
 Geek collects the balls
