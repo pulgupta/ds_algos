@@ -51,7 +51,7 @@ Reverse a linked list - Implemented
 Rotate a Linked List
 Reverse a Linked List in groups of given size
 Detect Loop in linked list - Understood
-Remove loop in Linked List
+Remove loop in Linked List - Understood
 n’th node from end of linked list - Easy
 Flattening a Linked List
 Merge two sorted linked lists 
@@ -59,8 +59,8 @@ Intersection point of two Linked Lists  - Understood
 Pairwise swap of a linked list
 Add two numbers represented by linked lists
 Check if Linked List is Palindrome
-Implement Queue using Linked List
-Implement Stack using Linked List
+Implement Queue using Linked List - Easy
+Implement Stack using Linked List - Easy
 Given a linked list of 0s, 1s and 2s, sort it
 Delete without head pointer
 Stack and Queue :

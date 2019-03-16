@@ -4,9 +4,10 @@ import org.ds.algos.practice.ds_algos.trees.Tree.Node;
 
 public class ConvertBinaryTreeToDoublyLinkedList {
 
-	public static Node treeToDoublyLinkedList(Node root) {
-		if(root == null)
+	public static Node treeToDoublyLinkedList(Node node) {
+		if(node == null)
 			return null;
+		treeToDoublyLinkedList(node.left);
 		return null;
 	}
 	
