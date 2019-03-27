@@ -1,11 +1,11 @@
 Subarray with given sum - Implemented
 Kadane’s Algorithm - Implemented
-Missing number in array - calculate series sum and subtract arry sum
+Missing number in array - Understood - calculate series sum and subtract array sum
 Subarray with given sum - Implemented
 Sort an array of 0s, 1s and 2s - Implemented
 Equilibrium point - Implemented
 Maximum sum increasing subsequence - Implemented
-Leaders in an array - easy
+Leaders in an array - Easy
 Minimum Platforms - Understood
 Maximum of all subarrays of size k - Implemented
 Reverse array in groups - Understood
@@ -48,16 +48,16 @@ Linked List :
 
 Finding middle element in a linked list - Understood
 Reverse a linked list - Implemented
-Rotate a Linked List
-Reverse a Linked List in groups of given size
+Rotate a Linked List - Understood
+Reverse a Linked List in groups of given size - Understood
 Detect Loop in linked list - Understood
 Remove loop in Linked List - Understood
 n’th node from end of linked list - Easy
 Flattening a Linked List
-Merge two sorted linked lists 
+Merge two sorted linked lists - Easy
 Intersection point of two Linked Lists  - Understood
 Pairwise swap of a linked list
-Add two numbers represented by linked lists
+Add two numbers represented by linked lists - Easy(5->6->3  // represents number 365)
 Check if Linked List is Palindrome
 Implement Queue using Linked List - Easy
 Implement Stack using Linked List - Easy
