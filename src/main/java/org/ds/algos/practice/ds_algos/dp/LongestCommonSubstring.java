@@ -22,19 +22,21 @@ public class LongestCommonSubstring {
 			}
 		}
 		// Once we have filled up the memo, lets travel and print the sub-string
-		for(int i = maxCordinateX; i>0;i--) {
-			for(int j = maxCordinateY; j>0;j--) {
-				if(memo[i][j] == 0)
-					return result.reverse().toString();
-				result.append(a.charAt(i-1));
-			}	
-		}
+		int i = maxCordinateX;
+		int j = maxCordinateY;
+		while(i>0 && j>0) {
+			if(memo[i][j] == 0)
+				return result.reverse().toString();
+			result.append(a.charAt(i-1));
+			i--;
+			j--;
+		}	
 		return result.reverse().toString();
 	}
 	
 	public static void main(String[] args) {
 		String a = "GeeksForGeeks";
-		String b = "eeksForGeeDummyData";
+		String b = "aaeeksForGeeDummyData";
 		System.out.println(getLongestSubString(a, b));
 	}
 }
