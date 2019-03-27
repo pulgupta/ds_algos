@@ -35,7 +35,7 @@ Recursively remove all adjacent duplicates
 Check if string is rotated by two places
 Roman Number to Integer - understood
 Anagram
-Longest Common Substring
+Longest Common Substring - Implemented
 Remove Duplicates
 Form a Palindrome
 Longest Distinct Characters in the string
