@@ -12,7 +12,19 @@ import org.ds.algos.practice.ds_algos.linkedLists.LinkedList.Node;
 public class FindLoopStartingPoint {
 
 	public static Node getLoopStartingNode(Node head) {
-		return null;
+		Node slow = head.getNext();
+		Node fast = head.getNext().getNext();
+		while(slow != fast) {
+			slow = slow.getNext();
+			fast = fast.getNext().getNext();
+		}
+		System.out.println("Pointers met at " + fast.getKey());
+		slow = head;
+		while(slow != fast) {
+			slow = slow.getNext();
+			fast = fast.getNext();
+		}
+		return slow;
 	}
 	
 	public static void main(String[] args) {
@@ -21,7 +33,7 @@ public class FindLoopStartingPoint {
 		//          |  |
 		//	        7<-6
 		Node head = LinkedList.getCircularLinkedList();
-		getLoopStartingNode(head);
+		System.out.println(getLoopStartingNode(head).getKey());
 	}
 	
 	
