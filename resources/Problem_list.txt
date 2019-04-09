@@ -20,7 +20,7 @@ Find the element that appears once in sorted array
 Kth largest element in a stream
 Relative Sorting
 Spirally traversing a matrix
-Sorting Elements of an Array by Frequency
+Sorting Elements of an Array by Frequency - Understood
 Largest Number formed from an Array
 Largest subarray of 0’s and 1’s
 Solved the above? Go for some more Questions
@@ -50,7 +50,7 @@ Finding middle element in a linked list - Understood
 Reverse a linked list - Implemented
 Rotate a Linked List - Understood
 Reverse a Linked List in groups of given size - Understood
-Detect Loop in linked list - Understood
+Detect Loop in linked list - Implemented
 Remove loop in Linked List - Understood
 n’th node from end of linked list - Easy
 Flattening a Linked List
@@ -84,7 +84,7 @@ Connect Nodes at Same Level
 Lowest Common Ancestor in a BST - Implemented
 Convert a given Binary Tree to Doubly Linked List
 Write Code to Determine if Two Trees are Identical or Not
-Given a binary tree, check whether it is a mirror of itself
+Given a binary tree, check whether it is a mirror of itself - Understood
 Height of Binary Tree - Implemented
 Maximum Path Sum
 Diameter of a Binary Tree
@@ -97,7 +97,7 @@ Heap :
 
 Find median in a stream
 Heap Sort
-Operations on Binary Min Heap
+Operations on Binary Min Heap - Implemented
 Rearrange characters
 Kth largest element in a stream
 Merge K sorted linked lists
