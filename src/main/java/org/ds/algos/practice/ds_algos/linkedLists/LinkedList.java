@@ -26,7 +26,7 @@ public final class LinkedList {
 		
 	}
 	
-	public Node getLinkedList() {
+	public static Node getLinkedList() {
 		Node node5 = new Node(5, null);
 		Node node4 = new Node(4, node5);
 		Node node3 = new Node(3, node4);
@@ -35,7 +35,25 @@ public final class LinkedList {
 		return root;
 	}	
 	
-	public void printList(Node root) {
+	public static Node getCircularLinkedList() {
+		Node head = new Node(1, null);
+		Node node2 = new Node(2, null);
+		head.setNext(node2);
+		Node node3 = new Node(3, null);
+		node2.setNext(node3);
+		Node node4 = new Node(4, null);
+		node3.setNext(node4);
+		Node node5 = new Node(5, null);
+		node4.setNext(node5);
+		Node node6 = new Node(6, null);
+		node5.setNext(node6);
+		Node node7 = new Node(7, null);
+		node6.setNext(node7);
+		node7.setNext(node4);
+		return head;
+	}
+	
+	public static void printList(Node root) {
 		while(root!=null) {
 			System.out.print(root.key);
 			root = root.getNext();

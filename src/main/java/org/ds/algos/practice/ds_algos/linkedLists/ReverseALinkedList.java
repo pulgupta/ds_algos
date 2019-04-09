@@ -20,11 +20,10 @@ public class ReverseALinkedList {
 	}
 	
 	public static void main(String args[]) {
-		LinkedList linkedList = new LinkedList();
-		Node root = linkedList.getLinkedList();
+		Node root = LinkedList.getLinkedList();
 		System.out.println("**Original**");
-		linkedList.printList(root);
+		LinkedList.printList(root);
 		System.out.println("\n\n**Reversed**");
-		linkedList.printList(ReverseALinkedList.reverseASinglyLinkedList(root));
+		LinkedList.printList(ReverseALinkedList.reverseASinglyLinkedList(root));
 	}
 }
