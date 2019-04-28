@@ -30,7 +30,6 @@ public class Tree {
 	 *    2   5    |    5   2
 	 *   / \       |       / \
 	 *  3   4      |      4   3
-	 *  
 	 */
 	public Node createTree() {
 		Node node1 = new Node(1);
