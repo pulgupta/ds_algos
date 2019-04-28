@@ -2,6 +2,11 @@ package org.ds.algos.practice.ds_algos.trees;
 
 import org.ds.algos.practice.ds_algos.trees.Tree.Node;
 
+/**
+ * -------------------INCOMPLETE-------------------
+ * @author pulgupta
+ *
+ */
 public class SumTree {
 
 	// Find the sum of children at a particular node
