@@ -24,6 +24,15 @@ public class MinimumJumps {
 		return jumps[n - 1];
 	}
 
+	/**
+	 * The idea here is to get the maximum ladder.
+	 * If we have the maximum ladder we will very well be able to 
+	 * try all ladders. Also we are not jumping to the maximum.
+	 * We are keeping it to get our reach and then we try all the cases 
+	 * in that reach. 
+	 * @param arr
+	 * @return
+	 */
 	int minJumpsIterative(int[] arr) {
 		int n = arr.length;
 		if (n == 0 || arr[0] == 0)
