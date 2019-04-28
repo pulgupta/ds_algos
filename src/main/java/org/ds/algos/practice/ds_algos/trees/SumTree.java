@@ -14,22 +14,23 @@ public class SumTree {
 		// Empty node
 		if(node == null)
 			return 0;
-		// Leaf node
-		if(node.left == null && node.right == null)
-			return node.data;
-		return findSum(node.left) + findSum(node.right);
+		return findSum(node.left) + node.data + findSum(node.right);
 	}
 	
 	public static boolean isSumTree(Node node) {
 		
+		if ((node == null) || (node.left == null && node.right == null)) 
+            return true;
 		
-		if(node == null)
-			return true;
 		int ls = findSum(node.left);
 		int rs = findSum(node.right); 
 		
-		
-		return false;
+		return (node.data == ls + rs) && isSumTree(node.left) 
+				&& isSumTree(node.right);
 	}
 	
+	public static void main(String[] args) {
+		Tree tree = new Tree();
+		System.out.println(isSumTree(tree.createTree()));
+	}
 }
