@@ -2,7 +2,7 @@ package org.ds.algos.practice.ds_algos.dp;
 
 public class MinimumJumps {
 
-	int minJumps(int[] arr) {
+	int minJumpsDp(int[] arr) {
 		int n = arr.length;
 		int jumps[] = new int[n];
 		int i, j;
@@ -24,10 +24,34 @@ public class MinimumJumps {
 		return jumps[n - 1];
 	}
 
+	int minJumpsIterative(int[] arr) {
+		int n = arr.length;
+		if (n == 0 || arr[0] == 0)
+			return -1;
+		int ladder = arr[0];
+		int stairs = arr[0];
+		int jump = 1;
+		for(int i=1; i<n; i++) {
+			if(i==n-1)
+				return jump;
+			// Try to get the maximum ladder while on the current ladder
+			if(i + arr[i] > ladder)
+				ladder = i + arr[i];
+			stairs--;
+			if (stairs == 0) {
+				jump++;
+				stairs = ladder - i;
+			}
+		}
+		
+		return 0;
+	}
+	
 	public static void main(String[] args) {
 		MinimumJumps obj = new MinimumJumps();
-		int[] arr = { 1, 3, 5, 8, 9, 2, 6, 7 };
-		System.out.println(obj.minJumps(arr));
+		int[] arr = { 1, 3, 5, 9, 8, 2, 6, 7 };
+		System.out.println(obj.minJumpsDp(arr));
+		System.out.println(obj.minJumpsIterative(arr));
 	}
 
 }
