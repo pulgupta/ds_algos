@@ -3,7 +3,7 @@ package org.ds.algos.practice.ds_algos.sorting;
 /**
  * In merge sort all the processing is in the merge step.
  * In the normal step we just recursively divide the problem into smaller problems.
- * However in case of quick sort we do all the processing in divinding the problems 
+ * However in case of quick sort we do all the processing in dividing the problems 
  * into smaller problems. The merge step is a fairly simple affair
  * @author pulgupta
  */
