@@ -19,7 +19,16 @@ public class QuickSort {
 			quickSort(pivot+1, high);
 		}
 	}
-	
+	/**
+	 * The idea is to start two pointers 
+	 * 1 for iterating the array and the second to mark the 
+	 * location before which all elements are smaller than the 
+	 * pivot. Once i reaches pivot location swap the pivot to its 
+	 * correct position
+	 * @param low
+	 * @param high
+	 * @return
+	 */
 	public static int partition(int low, int high) {
 		//in this step we will just pick the last element as the pivot
 		int pivot = arr[high-1];
