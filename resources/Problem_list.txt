@@ -95,7 +95,7 @@ Solved the above? Go for some more Questions
 
 Heap :
 
-Find median in a stream
+Find median in a stream - Implemented
 Heap Sort
 Operations on Binary Min Heap - Implemented
 Rearrange characters
@@ -195,7 +195,7 @@ Word Boggle
 Generate IP Addresses
 Bit Magic :
 
-Find first set bit
+Find first set bit - Implemented
 Rightmost different bit
 Check whether K-th bit is set or not
 Toggle bits given range
