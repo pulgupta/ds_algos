@@ -56,6 +56,8 @@ public class BinaryHeap {
 			minimum = r;
 		
 		// swap the minimum child with the root
+		// With one swap we can make sure that all the three nodes are 
+		// now in a sub heap
 		if(minimum != i) {
 			int temp = heap.get(i);
 			heap.set(i, heap.get(minimum));
