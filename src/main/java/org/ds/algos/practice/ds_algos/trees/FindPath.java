@@ -7,30 +7,32 @@ public class FindPath {
 
 	Stack<Node> path = new Stack<>();
 
-	public void findPath(Node root, int element) {
-		path.push(root);
-		while (!path.isEmpty()) {
-			if (path.peek().data == element) {
-				return;
-			} 
-			else {
-				if (path.peek().left != null) {
-					path.push(root.left);
-				}
-				if (root.right != null) {
-					path.push(root.right);
-				}
-			}
-		}
+	public boolean hasPath(Node root, int element) {
 
-		return;
+		if (root == null)
+			return false;
+		// Assume that this root lie in the path
+		path.push(root);
+
+		if (path.peek().data == element) {
+			return true;
+		} else {
+			// At this point check if the current node left or right children has 
+			// this element. If yes we return true, else we return false and remove
+			// this node from the path
+			if (hasPath(root.left, element) || hasPath(root.right, element))
+				return true;
+		}
+		
+		path.pop();
+		return false;
 	}
 
 	public static void main(String[] args) {
 		FindPath fp = new FindPath();
 		Tree tree = new Tree();
 		Node rootNode = tree.createTree();
-		fp.findPath(rootNode, 4);
+		fp.hasPath(rootNode, 4);
 		for (Node node : fp.path) {
 			System.out.println(node.data);
 
