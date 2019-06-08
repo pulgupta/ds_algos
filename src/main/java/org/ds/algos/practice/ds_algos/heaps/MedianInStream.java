@@ -33,6 +33,7 @@ public class MedianInStream {
 			}	
 			median = getMedian();
 		} else {
+			// same check to see if we need shifting
 			if(maxHeapSize-minHeapSize == 1) {
 				minHeap.add(maxHeap.poll() * -1);
 				maxHeap.add(num * -1);
