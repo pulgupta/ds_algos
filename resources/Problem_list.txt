@@ -9,7 +9,7 @@ Leaders in an array - Easy
 Minimum Platforms - Understood
 Maximum of all subarrays of size k - Implemented
 Reverse array in groups - Understood
-K’th smallest element 
+K’th smallest element - Understood(Using Quick Select)
 Trapping Rain Water
 Pythagorean Triplet
 Chocolate Distribution Problem

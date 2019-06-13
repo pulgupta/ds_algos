@@ -1,6 +1,6 @@
 package org.ds.algos.practice.ds_algos.arrays;
 
-public class MaximumSumOfIncreasingSubArray {
+public class MaximumSumOfIncreasingSubSequence {
 
 	public static int getMaximumSumOfInscreasingSubArray(int[] arr) {
 		int length = arr.length;
@@ -30,6 +30,6 @@ public class MaximumSumOfIncreasingSubArray {
 	
 	public static void main(String args[]) {
 		 int[] arr = {1, 101, 2, 3, 100, 4, 5 };
-		 System.out.println(MaximumSumOfIncreasingSubArray.getMaximumSumOfInscreasingSubArray(arr));
+		 System.out.println(MaximumSumOfIncreasingSubSequence.getMaximumSumOfInscreasingSubArray(arr));
 	}
 }
