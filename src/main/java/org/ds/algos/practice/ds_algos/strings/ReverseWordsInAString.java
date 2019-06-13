@@ -34,6 +34,7 @@ public class ReverseWordsInAString {
 		}
 		
 		// Second Pass
+		// Reverse the complete string
 		for(int i=0; i<arr.length/2; i++) {
 			char temp = arr[i];
 			arr[i] = arr[arr.length-1-i];
