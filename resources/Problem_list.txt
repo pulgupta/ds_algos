@@ -1,10 +1,12 @@
+Array:
+
 Subarray with given sum - Implemented
 Count the triplets [Sum of two elements equal to third in an array] - Understood
 Kadane’s Algorithm - Implemented
 Missing number in an array - Understood - calculate series sum and subtract array sum
 Sort an array of 0s, 1s and 2s - Implemented
 Equilibrium point - Implemented
-Maximum sum increasing subsequence - Implemented
+Maximum sum increasing sub-sequence - Implemented
 Leaders in an array - Easy
 Minimum Platforms - Understood
 Maximum of all subarrays of size k - Implemented
@@ -17,7 +19,7 @@ Stock buy and sell
 Element with left side smaller and right side greater
 Convert array into Zig-Zag fashion
 Find the element that appears once in sorted array
-Kth largest element in a stream
+Kth largest element in a stream - Understood, can be done using heaps
 Relative Sorting
 Spirally traversing a matrix
 Sorting Elements of an Array by Frequency - Understood
@@ -63,6 +65,7 @@ Implement Queue using Linked List - Easy
 Implement Stack using Linked List - Easy
 Given a linked list of 0s, 1s and 2s, sort it
 Delete without head pointer
+
 Stack and Queue :
 
 Next larger element
@@ -73,6 +76,7 @@ LRU Cache - Implemented
 Circular tour
 First non-repeating character in a stream
 Rotten Oranges
+
 Tree :
 
 Print Left View of Binary Tree - Implemented as part of parameter

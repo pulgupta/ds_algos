@@ -90,7 +90,15 @@ public class Tree {
 	    else
 	    	return dright+1;
 	}
-	
+
+	public int getTreeHeightApproach2(Node root) {
+		// Base Case
+		if(root == null)
+			return 0;
+		// Recursively check for the height of left and right sub tree and return 1 more than that
+		return Math.max(getTreeHeight(root.left), getTreeHeight(root.right)) + 1;
+	}
+
 	public void printInorder(Node root) {
 		if(root == null)
 			return;
@@ -104,5 +112,6 @@ public class Tree {
 		Tree tree = new Tree();
 		Node root = tree.createTree();
 		System.out.println(tree.getTreeHeight(root));
+		System.out.println(tree.getTreeHeightApproach2(root));
 	}
 }
