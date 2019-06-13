@@ -15,12 +15,17 @@ public class FindPath {
 		path.push(root);
 
 		if (path.peek().data == element) {
+			// If this is the element for which we are finding the path
 			return true;
 		} else {
+
 			// At this point check if the current node left or right children has 
 			// this element. If yes we return true, else we return false and remove
 			// this node from the path
-			if (hasPath(root.left, element) || hasPath(root.right, element))
+			if (hasPath(root.left, element))
+				return true;
+
+			if (hasPath(root.right, element))
 				return true;
 		}
 		
