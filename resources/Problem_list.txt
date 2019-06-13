@@ -250,5 +250,5 @@ Some more Questions on Trees :
 
 Mirror Tree
 Longest consecutive sequence in Binary tree
-Bottom View of Binary Tree
-Lowest Common Ancestor in a Binary Tree
+Bottom View of Binary Tree - Understood, based on the horizontal distance of the nodes
+Lowest Common Ancestor in a Binary Tree - Understood both for normal search tree and for BST
