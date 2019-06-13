@@ -1,7 +1,7 @@
 Subarray with given sum - Implemented
+Count the triplets [Sum of two elements equal to third in an array] - Understood
 Kadane’s Algorithm - Implemented
-Missing number in array - Understood - calculate series sum and subtract array sum
-Subarray with given sum - Implemented
+Missing number in an array - Understood - calculate series sum and subtract array sum
 Sort an array of 0s, 1s and 2s - Implemented
 Equilibrium point - Implemented
 Maximum sum increasing subsequence - Implemented
