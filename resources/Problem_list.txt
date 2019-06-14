@@ -82,18 +82,18 @@ Tree :
 Print Left View of Binary Tree - Implemented as part of parameter
 Check for BST - Implemented
 Print Bottom View of Binary Tree - Similar to Parameter problem
-Print a Binary Tree in Vertical Order
+Print a Binary Tree in Vertical Order - Understood
 Level order traversal in spiral form - Understood
-Connect Nodes at Same Level
+Connect Nodes at Same Level - Understood
 Lowest Common Ancestor in a BST - Implemented
 Convert a given Binary Tree to Doubly Linked List
-Write Code to Determine if Two Trees are Identical or Not
+Write Code to Determine if Two Trees are Identical or Not - Understood
 Given a binary tree, check whether it is a mirror of itself - Understood
 Height of Binary Tree - Implemented
 Maximum Path Sum
-Diameter of a Binary Tree
+Diameter of a Binary Tree - Understood
 Number of leaf nodes - Implemented
-Check if given Binary Tree is Height Balanced or Not - Implemented(Not Perfect)
+Check if given Binary Tree is Height Balanced or Not - Implemented
 Serialize and Deserialize a Binary Tree
 Solved the above? Go for some more Questions
 
@@ -103,10 +103,10 @@ Find median in a stream - Implemented
 Heap Sort
 Operations on Binary Min Heap - Implemented
 Rearrange characters
-Kth largest element in a stream
+Kth largest element in a stream - Understood
 Merge K sorted linked lists
-Recursion :
 
+Recursion :
 
 Flood fill Algorithm
 Number of paths
@@ -114,9 +114,10 @@ Combination Sum – Part 2
 Special Keyboard
 Water Overflow
 Josephus problem
+
 Hashing :
 
-Largest subarray with 0 sum
+Largest subarray with 0 sum - Understood, add up the elements and when we again see the same sum we have a solution
 Swapping pairs make sum equal
 Count distinct elements in every window
 Array Pair Sum Divisibility Problem
@@ -131,10 +132,11 @@ Uncommon characters
 Smallest window in a string containing all the characters of another string
 First element to occur k times - Easy
 Check if frequencies can be equal
+
 Graph :
 
-Depth First Traversal
-Breadth First Traversal
+Depth First Traversal - Understood
+Breadth First Traversal - Understood
 Detect cycle in a directed graph
 Topological sort
 Find the number of islands
@@ -148,6 +150,7 @@ Circle of Strings
 Floyd Warshall
 Alien Dictionary
 Snake and Ladder Problem
+
 Greedy :
 
 Activity Selection
@@ -165,6 +168,7 @@ Minimum Spanning Tree - Implemented
 Minimum Operations
 Shop in Candy Store
 Geek collects the balls
+
 Dynamic Programming :
 
 Longest Increasing Subsequence
@@ -190,6 +194,7 @@ Merge Sort - Implemented
 Find the element that appears once in sorted array
 K-th element of two sorted Arrays
 Last index of One
+
 Backtracking :
 
 N-Queen Problem
@@ -213,6 +218,7 @@ Longest Consecutive 1’s
 Sparse Number
 Alone in a couple
 Maximum subset XOR
+
 Some More Questions on Arrays :
 
 Most frequent word in an array of strings
@@ -232,6 +238,7 @@ Smallest Positive missing number
 Count the triplets
 Maximum Index
 Jumping Caterpillars
+
 Some More Questions on Strings :
 
 CamelCase Pattern Matching
@@ -246,6 +253,7 @@ Repeated Character
 Remove common characters and concatenate
 Geek and its Colored Strings
 Second most repeated string in a sequence
+
 Some more Questions on Trees :
 
 Mirror Tree
