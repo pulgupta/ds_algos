@@ -162,7 +162,7 @@ Page Faults in LRU
 Largest number possible
 Minimize the heights
 Minimize the sum of product
-Huffman Decoding
+Huffman Decoding - Understood
 Max length chain
 Minimum Spanning Tree - Implemented
 Minimum Operations
@@ -186,6 +186,7 @@ Count number of ways to cover a distance
 Egg Dropping Puzzle
 Optimal Strategy for a Game
 Shortest Common Supersequence
+
 Divide and Conquer :
 
 Binary Search - Implemented
@@ -202,6 +203,7 @@ Solve the Sudoku
 Rat in a Maze Problem
 Word Boggle
 Generate IP Addresses
+
 Bit Magic :
 
 Find first set bit - Implemented
