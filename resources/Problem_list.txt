@@ -31,12 +31,12 @@ String :
 
 Parenthesis Checker - Implemented
 Reverse words in a given string - Implemented
-Permutations of a given string
+Permutations of a given string - Implemented
 Longest Palindrome in a String
 Recursively remove all adjacent duplicates
-Check if string is rotated by two places
-Roman Number to Integer - understood
-Anagram
+Check if string is rotated by two places - Easy
+Roman Number to Integer - Understood
+Anagram - Easy (Same characters with different order)
 Longest Common Substring - Implemented
 Remove Duplicates
 Form a Palindrome
@@ -127,8 +127,8 @@ Find all pairs with a given sum
 Find first repeated character - Easy
 Zero Sum Subarrays - Understood
 Minimum indexed character
-Check if two arrays are equal or not
-Uncommon characters
+Check if two arrays are equal or not - Easy
+Uncommon characters - Easy
 Smallest window in a string containing all the characters of another string
 First element to occur k times - Easy
 Check if frequencies can be equal
