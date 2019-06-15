@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds_algos.Recursion;
+package org.ds.algos.practice.ds_algos.recursion;
 
 /**
  * The idea is to check what is the maximum value we can achieve in the knapsack

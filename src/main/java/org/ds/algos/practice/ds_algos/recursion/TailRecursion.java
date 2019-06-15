@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds_algos.Recursion;
+package org.ds.algos.practice.ds_algos.recursion;
 
 public class TailRecursion {
 
