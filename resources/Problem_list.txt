@@ -180,7 +180,7 @@ Coin Change Problem
 Subset Sum Problem
 Box Stacking
 Rod Cutting
-Path in Matrix
+Path in Matrix - Implemented
 Minimum sum partition
 Count number of ways to cover a distance
 Egg Dropping Puzzle
