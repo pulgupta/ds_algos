@@ -192,7 +192,7 @@ Divide and Conquer :
 Binary Search - Implemented
 Quick Sort - Implemented
 Merge Sort - Implemented
-Find the element that appears once in sorted array
+Find the element that appears once in sorted array - Understood
 K-th element of two sorted Arrays
 Last index of One
 

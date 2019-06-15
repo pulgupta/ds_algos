@@ -18,7 +18,7 @@ class Result {
 	
 }
 /**
- * Find the continuous sub array in an sorted array with the sum equal to X
+ * Find the continuous sub array in an array with the sum equal to X
  * The trick here is to move the left and right pointer in a single iteration
  * @author pulgupta
  */
@@ -46,7 +46,7 @@ public class SumOfContinousSubArray {
 	}
 	
 	public static void main(String args[]) {
-		int[] arr = { 1, 2, 3, 7, 5 };
+		int[] arr = { 2, 1, 7, 5, 3 };
 		SumOfContinousSubArray obj = new SumOfContinousSubArray();
 		System.out.println(obj.getSubArrayDetails(arr, 12));
 		int[] arr1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
