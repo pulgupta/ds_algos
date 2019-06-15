@@ -11,7 +11,7 @@ public class TailRecursion {
 	 */
 	private int factorial(int n, int result) {
 		if(n == 1)
-			return result;
+			return result; // As soon as we return this chain of returns start and we will get the final value
 		return factorial(n-1, result*n);
 	}
 	
