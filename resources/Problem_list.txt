@@ -38,9 +38,9 @@ Check if string is rotated by two places - Easy
 Roman Number to Integer - Understood
 Anagram - Easy (Same characters with different order)
 Longest Common Substring - Implemented
-Remove Duplicates
+Remove Duplicates - Easy, keep track of the characters already encountered
 Form a Palindrome
-Longest Distinct Characters in the string
+Longest Distinct Characters in the string - Understood. Kepp track of the elements we have encountered till now.
 Implement Atoi
 Implement strstr
 Longest Common Prefix
