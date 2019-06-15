@@ -137,14 +137,14 @@ Graph :
 
 Depth First Traversal - Understood
 Breadth First Traversal - Understood
-Detect cycle in a directed graph
+Detect cycle in a directed graph - Understood. Keep track of the elements in the current recursion stack.
 Topological sort
-Find the number of islands
+Find the number of islands - Easy
 Implementing Dijkstra - Implemented
 Minimum Swaps
 Strongly Connected Components
-Shortest Source to Destination Path
-Find whether path exist
+Shortest Source to Destination Path - Understood
+Find whether path exist - Understood
 Minimum Cost Path
 Circle of Strings
 Floyd Warshall
