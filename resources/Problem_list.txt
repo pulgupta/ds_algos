@@ -60,7 +60,7 @@ Merge two sorted linked lists - Easy
 Intersection point of two Linked Lists  - Understood
 Pairwise swap of a linked list
 Add two numbers represented by linked lists - Easy(5->6->3  // represents number 365)
-Check if Linked List is Palindrome
+Check if Linked List is Palindrome - Understood(Using Stack or reverse from middle)
 Implement Queue using Linked List - Easy
 Implement Stack using Linked List - Easy
 Given a linked list of 0s, 1s and 2s, sort it
@@ -122,8 +122,8 @@ Swapping pairs make sum equal
 Count distinct elements in every window
 Array Pair Sum Divisibility Problem
 Longest consecutive subsequence
-Array Subset of another array
-Find all pairs with a given sum
+Array Subset of another array - Easy
+Find all pairs with a given sum - Easy
 Find first repeated character - Easy
 Zero Sum Subarrays - Understood
 Minimum indexed character
@@ -147,7 +147,7 @@ Shortest Source to Destination Path - Understood
 Find whether path exist - Understood
 Minimum Cost Path
 Circle of Strings
-Floyd Warshall
+Floyd Warshall - Understood
 Alien Dictionary
 Snake and Ladder Problem
 
