@@ -21,7 +21,7 @@ Convert array into Zig-Zag fashion
 Find the element that appears once in sorted array
 Kth largest element in a stream - Understood, can be done using heaps
 Relative Sorting
-Spirally traversing a matrix
+Spirally traversing a matrix - Easy
 Sorting Elements of an Array by Frequency - Understood
 Largest Number formed from an Array
 Largest subarray of 0’s and 1’s
@@ -63,7 +63,7 @@ Add two numbers represented by linked lists - Easy(5->6->3  // represents number
 Check if Linked List is Palindrome - Understood(Using Stack or reverse from middle)
 Implement Queue using Linked List - Easy
 Implement Stack using Linked List - Easy
-Given a linked list of 0s, 1s and 2s, sort it
+Given a linked list of 0s, 1s and 2s, sort it - Understood - Maintain 3 pointers (Head, Tail and i, move 2 after tail and 0 before head)
 Delete without head pointer
 
 Stack and Queue :
@@ -100,11 +100,11 @@ Solved the above? Go for some more Questions
 Heap :
 
 Find median in a stream - Implemented
-Heap Sort
+Heap Sort - Understood
 Operations on Binary Min Heap - Implemented
 Rearrange characters
 Kth largest element in a stream - Understood
-Merge K sorted linked lists
+Merge K sorted linked lists - Understood (pair 2 lists and merge in each pass resulting in dividing the problem by half)
 
 Recursion :
 
