@@ -119,6 +119,8 @@ public class Dijkstra {
 					if(!visited[i] && !queue.contains(newNode)) {
 						queue.add(newNode);
 					}
+					// If the target node is in the queue, update its disctance in case the new distance is less
+					// than the old distance
 					else if (!visited[i] && queue.contains(newNode)) {
 						boolean found=false;
 						for(Distance d: queue) {
