@@ -153,7 +153,7 @@ Snake and Ladder Problem
 
 Greedy :
 
-Activity Selection
+Activity Selection - Understood
 N meetings in one room
 Coin Piles
 Minimum number of Coins
