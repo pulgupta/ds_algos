@@ -8,26 +8,22 @@ import org.ds.algos.practice.ds_algos.trees.Tree.Node;
  *
  */
 public class PathSum {
-
 	
 	public boolean pathSum(Node node, int sum) {
 		if(node==null)
 			return false;
-		boolean ans = false;
+		// if we have found a node then return true;
 		if(node.left==null && node.right==null && node.data == sum)
 			return true;
-		/**
-		 * this is a very neat trick to pull the result up from the 
-		 * stack while we are recursive calling the method.
-		 * In this particular case if at any time the above condition
-		 * evaluates to true and we are returning true, it will be 
-		 * finally returned by the help of the ans and its or condition. 
-		 */
 		if(node.left!=null)
-			ans = ans || pathSum(node.left, sum-node.data);
+			// If we have find the path keep on unwinding recursive calls
+			if(pathSum(node.left, sum-node.data))
+				return true;
 		if(node.right!=null)
-			ans = ans || pathSum(node.right, sum-node.data);
-		return ans;
+			// If we have find the path keep on unwinding recursive calls
+			if(pathSum(node.right, sum-node.data))
+				return true;
+		return false;
 	}
 	
 	public static void main(String[] args) {
