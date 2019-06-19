@@ -1,8 +1,10 @@
 package org.ds.algos.practice.ds_algos.trees;
 
+import java.util.Objects;
+
 public class Tree {
 
-	static class Node {
+	static class Node implements Comparable<Node> {
 		int data;
 		Node left;
 		Node right;
@@ -20,6 +22,24 @@ public class Tree {
 			this.data = data;
 			this.left = left;
 			this.right = right;
+		}
+
+		@Override
+		public boolean equals(Object o) {
+			if (this == o) return true;
+			if (o == null || getClass() != o.getClass()) return false;
+			Node node = (Node) o;
+			return data == node.data;
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash(data);
+		}
+
+		@Override
+		public int compareTo(Node o) {
+			return data - o.data;
 		}
 	}
 	
