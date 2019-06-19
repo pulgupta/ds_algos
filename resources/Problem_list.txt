@@ -135,8 +135,8 @@ Check if frequencies can be equal
 
 Graph :
 
-Depth First Traversal - Understood
-Breadth First Traversal - Understood
+Depth First Traversal - Implemented
+Breadth First Traversal - Implemented
 Detect cycle in a directed graph - Understood. Keep track of the elements in the current recursion stack.
 Topological sort
 Find the number of islands - Easy
