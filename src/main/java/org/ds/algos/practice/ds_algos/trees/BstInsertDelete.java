@@ -13,24 +13,28 @@ public class BstInsertDelete {
      */
     public Tree.Node insertNode(Tree.Node root, Tree.Node parent, Tree.Node node) {
         if(root == null) {
-            if(node.data < parent.data)
+            if(node.data < parent.data) {
                 parent.left = node;
-            else
+            } else {
                 parent.right = node;
+            }
             return node;
         }
         // The idea is to find the place where the node really belongs
         if(node.data > root.data) {
             return insertNode(root.right, root, node);
+        } else {
+            return insertNode(root.left, root, node);
         }
-        return insertNode(root.left,root, node);
     }
 
     /**
      * Delete the node from the tree and make sure it is still a BST
      * Time Complexity :
      * Space Complexity :
-     * @param node
+     * @param root Tree root node
+     * @param parent parent node
+     * @param node The node to be deleted
      */
     public Tree.Node deleteNode(Tree.Node root, Tree.Node parent, Tree.Node node) {
         //We have find the element to delete
