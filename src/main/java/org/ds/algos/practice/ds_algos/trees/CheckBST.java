@@ -6,6 +6,8 @@ public class CheckBST {
 
     /**
      * Check if the tree is a BST or not
+     * Time Complexity O(n)
+     * Space Complexity O(1)
      * @param root
      * @return
      */
