@@ -40,7 +40,22 @@ public class CheckBST {
         Tree tree = new Tree();
         // Should return true as this in indeed a BST
         System.out.println(obj.checkBST(tree.createBST()));
-        // Should return false as this is not a BST
-        System.out.println(obj.checkBST(tree.createTree()));
+        /**
+         *          10
+         *         /  \
+         *        5   15
+         *       /
+         *      3
+         *     /
+         *    8
+         */
+        Tree.Node node5 = new Tree.Node(8, null, null);
+        Tree.Node node4 = new Tree.Node(3, node5, null);
+        Tree.Node node3 = new Tree.Node(5, node4, null);
+        Tree.Node node2 = new Tree.Node(15, null, null);
+        Tree.Node node1 = new Tree.Node(10, node3, node2);
+        System.out.println(obj.checkBST(node1));
+
+
     }
 }
