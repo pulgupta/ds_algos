@@ -59,7 +59,7 @@ Flattening a Linked List
 Merge two sorted linked lists - Easy
 Intersection point of two Linked Lists  - Understood
 Pairwise swap of a linked list
-Add two numbers represented by linked lists - Easy(5->6->3  // represents number 365)
+Add two numbers represented by linked lists - Implemented(5->6->3  // represents number 365)
 Check if Linked List is Palindrome - Understood(Using Stack or reverse from middle)
 Implement Queue using Linked List - Easy
 Implement Stack using Linked List - Easy

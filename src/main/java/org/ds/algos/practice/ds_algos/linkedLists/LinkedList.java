@@ -3,7 +3,7 @@ package org.ds.algos.practice.ds_algos.linkedLists;
 public final class LinkedList {
 	
 	static final class Node {
-		final private int key;
+		private int key;
 		private Node next;
 		
 		public Node(int key, Node next) {
@@ -14,6 +14,10 @@ public final class LinkedList {
 
 		public int getKey() {
 			return key;
+		}
+
+		public void setKey(int key) {
+			this.key = key;
 		}
 
 		public Node getNext() {
