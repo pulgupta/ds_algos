@@ -85,7 +85,7 @@ Print Bottom View of Binary Tree - Similar to Parameter problem
 Print a Binary Tree in Vertical Order - Understood
 Level order traversal in spiral form - Understood
 Connect Nodes at Same Level - Understood
-Lowest Common Ancestor in a BST - Implemented
+Lowest Common Ancestor in a BST - Implemented (also implemented in non BST binary tree)
 Convert a given Binary Tree to Doubly Linked List
 Write Code to Determine if Two Trees are Identical or Not - Understood
 Given a binary tree, check whether it is a mirror of itself - Understood
