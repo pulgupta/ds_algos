@@ -41,6 +41,13 @@ public class Tree {
 		public int compareTo(Node o) {
 			return data - o.data;
 		}
+
+		@Override
+		public String toString() {
+			return "Node{" +
+					"data=" + data +
+					'}';
+		}
 	}
 	
 	/* This is the tree we will be using for most of our testing
