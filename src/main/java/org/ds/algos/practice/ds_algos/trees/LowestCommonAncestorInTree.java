@@ -4,6 +4,13 @@ import java.util.List;
 
 import static org.ds.algos.practice.ds_algos.trees.Tree.Node;
 
+/**
+ * The idea is same as we were doing in the BST.
+ * However in BST because of its properties we were able to decide where the key lies.
+ * In normal binary tree we are forced to find the node in the subtrees to decide which
+ * sub tree to check next.
+ * @author pulgupta 
+ */
 public class LowestCommonAncestorInTree {
 
     public static Node getLowestCommonAncestor(Node root, int node1, int node2) {
