@@ -5,6 +5,10 @@ import java.util.Comparator;
 
 public class BigNumberSorting {
 
+    // The trick here is to understand that string comparator works correctly as long as a
+    // the numbers have the same length.
+    // If the length differs than it is more of a string comparision than a number comparision.
+    // For this reason we are doing number comparisions ourselves and rest is left to String Comparator.
     static class MyComparator implements Comparator<String> {
         public int compare(String a, String b) {
             if(a.length()> b.length())
