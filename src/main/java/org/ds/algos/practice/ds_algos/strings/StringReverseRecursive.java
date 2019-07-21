@@ -2,18 +2,15 @@ package org.ds.algos.practice.ds_algos.strings;
 
 public class StringReverseRecursive {
 
-    public void printReverse(String string) {
+    public String printReverse(String string) {
         if(string == null || string.isEmpty())
-            return;
-        if(string.length()>0) {
-            String subString = Character.toString(string.charAt(0));
-            printReverse(string.substring(1));
-            System.out.print(subString);
-        }
+            return "";
+        String subString = Character.toString(string.charAt(0));
+        return printReverse(string.substring(1))+subString;
     }
 
     public static void main(String[] args) {
         StringReverseRecursive recursive = new StringReverseRecursive();
-        recursive.printReverse("This is a string");
+        System.out.println(recursive.printReverse("This is a string"));
     }
 }
