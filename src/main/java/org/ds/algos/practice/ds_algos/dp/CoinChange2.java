@@ -26,10 +26,10 @@ import java.util.List;
  *  [1,2,3]    |  1  |  1  |  2  |  3  |  4  |
  */
 public class CoinChange2 {
-    public static long getWays(int n, List<Integer> c) {
-        c.sort(Integer::compareTo);
+    public static long getWays(int n, List<Long> c) {
+        c.sort(Long::compareTo);
         // Write your code here
-        int[][] dp = new int[c.size()+1][n+1];
+        long[][] dp = new long[c.size()+1][n+1];
         // Filling up the first column and first row
         for(int i=0;i<=n;i++){
             dp[0][i] = 0;
@@ -41,11 +41,11 @@ public class CoinChange2 {
         // Iterate considering one coin at a time
         for(int i=1;i<=c.size();i++) {
             // Iterate to find answer for each amount from 0...to n
-            int coinAtHand = c.get(i-1);
+            long coinAtHand = c.get(i-1);
             for(int j=1;j<=n;j++){
                 if(coinAtHand<=j) {
                     // if we not choose the coin + if we choose the coin
-                    dp[i][j] = dp[i-1][j] + dp[i][j-coinAtHand];
+                    dp[i][j] = dp[i-1][j] + dp[i][(int)(j-coinAtHand)];
                 } else {
                     dp[i][j] = dp[i-1][j];
                 }
@@ -56,8 +56,11 @@ public class CoinChange2 {
     }
 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        list.add(2);list.add(5);list.add(3);list.add(6);
+        List<Long> list = new ArrayList<>();
+        list.add(2L);
+        list.add(5L);
+        list.add(3L);
+        list.add(6L);
         System.out.print(getWays(10, list));
     }
 
