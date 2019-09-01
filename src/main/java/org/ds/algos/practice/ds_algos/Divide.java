@@ -10,23 +10,25 @@ public class Divide {
     public static int divide(int dividend, int divisor) {
         int result = 0;
         boolean makeNegative = false;
-        if(dividend<0) {
-            dividend = Math.abs(dividend);
+        if((dividend<0 && divisor>0) || (dividend>0 && divisor<0))
             makeNegative = true;
+        if(dividend>0) {
+            dividend = ~dividend + 1;
         }
-        if(divisor<0) {
-            divisor = Math.abs(divisor);
-            makeNegative = !makeNegative;
+        if(divisor>0) {
+            divisor = ~divisor + 1;
         }
         int temp = divisor;
-        if(divisor > dividend)
+        if(divisor < dividend)
             return result;
-        for(int i=0;i<dividend;i++) {
+        for(int i=0;;i++) {
+            if(i==Integer.MAX_VALUE)
+                return Integer.MAX_VALUE;
             if(temp == dividend) {
                 result = i+1;
                 break;
             }
-            if(temp>dividend) {
+            if(temp<dividend) {
                 result = i;
                 break;
             }
