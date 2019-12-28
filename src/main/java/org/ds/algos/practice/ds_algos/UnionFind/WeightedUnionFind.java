@@ -2,7 +2,7 @@ package org.ds.algos.practice.ds_algos.UnionFind;
 
 import java.util.Scanner;
 
-public class QuickUnion {
+public class WeightedUnionFind {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int items = in.nextInt();
