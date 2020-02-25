@@ -42,6 +42,7 @@ public class BFS {
                 for(int i=0;i<size;i++){
                     if(adjacencyMatrix[current][i]==1 && !visited[i]){
                         System.out.println("Adding " + i + " in the queue to be visited");
+                        // add all the vertex which are connected with this node and have not been visited yet
                         queue.add(i);
                     }
                 }
