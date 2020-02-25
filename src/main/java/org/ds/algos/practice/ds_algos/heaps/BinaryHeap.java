@@ -49,12 +49,14 @@ public class BinaryHeap {
 		int l = 2*i + 1;
 		int r = 2*i + 2;
 		// Find the minimum child
-		if(l < size && heap.get(i) > heap.get(l))
+		// Size check is to make sure we are not going beyond the array size
+		if(l < size && heap.get(i) > heap.get(l)) {
 			minimum = l;
-		
-		if(r < size && heap.get(minimum) > heap.get(r))
+		}
+		// Bounded by the size check if the right child is less than the root and the left child
+		if(r < size && heap.get(minimum) > heap.get(r)) {
 			minimum = r;
-		
+		}
 		// swap the minimum child with the root
 		// With one swap we can make sure that all the three nodes are 
 		// now in a sub heap
@@ -62,8 +64,8 @@ public class BinaryHeap {
 			int temp = heap.get(i);
 			heap.set(i, heap.get(minimum));
 			heap.set(minimum, temp);
-			// Recursively check all the lower levels where we have 
-			// pushed down the root
+			// Recursively check all the lower levels where we have pushed down the root
+			// This is because in a heap all the sub notes also satisfy the heap policy.
 			heapify(minimum, size);
 		}
 	}
