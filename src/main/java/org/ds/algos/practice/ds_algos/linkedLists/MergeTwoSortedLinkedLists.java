@@ -1,7 +1,5 @@
 package org.ds.algos.practice.ds_algos.linkedLists;
 
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
-
 public class MergeTwoSortedLinkedLists {
 
     static class Node {
@@ -25,18 +23,6 @@ public class MergeTwoSortedLinkedLists {
         Node node = new Node(1, new Node(9, new Node(19, new Node(21, new Node(35, null)))));
         printList(node);
         return node;
-    }
-
-    private void printList(Node head) {
-        Node temp = head;
-        while (temp != null) {
-            System.out.print(temp.value);
-            if(temp.next!=null) {
-                System.out.print("->");
-            }
-            temp = temp.next;
-        }
-        System.out.println("");
     }
 
     public Node mergeTwoSortedList(Node head1, Node head2) {
@@ -75,6 +61,7 @@ public class MergeTwoSortedLinkedLists {
     }
 
     public static void main(String[] args) {
+
         MergeTwoSortedLinkedLists obj = new MergeTwoSortedLinkedLists();
         System.out.println("First list is:");
         Node head1 = obj.initializeFirstList();
@@ -84,5 +71,17 @@ public class MergeTwoSortedLinkedLists {
         System.out.println("\nPrinting the merged list");
         obj.printList(obj.mergeTwoSortedList(head1, head2));
 
+    }
+
+    private void printList(Node head) {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.value);
+            if(temp.next!=null) {
+                System.out.print("->");
+            }
+            temp = temp.next;
+        }
+        System.out.println("");
     }
 }
