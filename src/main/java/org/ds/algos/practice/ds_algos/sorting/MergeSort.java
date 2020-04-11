@@ -3,16 +3,14 @@ package org.ds.algos.practice.ds_algos.sorting;
 /**
  * Merge sort works by dividing the arrays into smaller arrays and
  * once they are broken down to a single element level we will then merge them
- * 
  * @author pulgupta
- *
  */
 public class MergeSort {
 	
 	static int[] arr = {3,2,5,7,1,4,6};
 	// Merge sort will require a temp array in case of arrays.
 	// We could have avoided it if we were using linked lists and this is the reason 
-	// Merge sort is better for sorting linkedLists
+	// merge sort is better for sorting linkedLists
 	static int [] tempMergArr = new int[arr.length];
 	
 	public static void mergeSort(int low, int high) {
@@ -33,7 +31,7 @@ public class MergeSort {
 		@param lowerIndex: Starting index of the first subarray
 		@param middle: Ending index of the first subarray
 			middle+1 will be the starting index of the second array
-		@higherIndex: last index of the second subarray
+		@param higherIndex: last index of the second subarray
 	*/
 	public static void merge(int lowerIndex, int middle, int higherIndex) {
 		
@@ -60,7 +58,7 @@ public class MergeSort {
         	        	arr[k] = tempMergArr[j];
 	                	j++;
 		        }
-                	// Always move K so that we can set the next element
+                	// Always move K so that we can move to the next element
 	           	k++;
         	}
 		// Handle the cases where one of the array is over so we will
