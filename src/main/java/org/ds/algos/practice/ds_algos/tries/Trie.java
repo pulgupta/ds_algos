@@ -11,8 +11,8 @@ package org.ds.algos.practice.ds_algos.tries;
 public class Trie {
 	
 	Node root;
-	
-	class Node {
+
+	static class Node {
 		Node[] children;
 		boolean isEndOfWord;
 		
