@@ -1,5 +1,6 @@
 package org.ds.algos.practice.ds_algos.graphs;
 
+import java.util.Objects;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Scanner;
@@ -11,13 +12,24 @@ class Weights implements Comparable<Weights>{
 		this.vertex = vertex;
 		this.weight = weight;
 	}
+
 	@Override
 	public int compareTo(Weights o1) {
-		// TODO Auto-generated method stub
 		return weight-o1.weight;
 	}
-	
-	
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Weights weights = (Weights) o;
+		return weight == weights.weight;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(weight);
+	}
 }
 public class PrismsAlgo {
 	public static void main(String[] args) {
