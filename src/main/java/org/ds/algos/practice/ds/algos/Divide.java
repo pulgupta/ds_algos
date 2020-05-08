@@ -6,41 +6,41 @@ package org.ds.algos.practice.ds.algos;
  * The integer division should truncate toward zero.
  */
 public class Divide {
-
     public static int divide(int dividend, int divisor) {
+
+        if (divisor == 0) {
+            throw new IllegalArgumentException("Invalid value for divisor");
+        }
+
         int result = 0;
         boolean makeNegative = false;
-        if((dividend<0 && divisor>0) || (dividend>0 && divisor<0))
+        if ((dividend < 0 && divisor > 0) || (dividend > 0 && divisor < 0))
             makeNegative = true;
-        if(dividend>0) {
+        if (dividend > 0) {
             dividend = ~dividend + 1;
         }
-        if(divisor>0) {
+        if (divisor > 0) {
             divisor = ~divisor + 1;
         }
         int temp = divisor;
-        if(divisor < dividend)
+        if (divisor < dividend)
             return result;
-        for(int i=0;;i++) {
-            if(i==Integer.MAX_VALUE)
+        for (int i = 0; ; i++) {
+            if (i == Integer.MAX_VALUE)
                 return Integer.MAX_VALUE;
-            if(temp == dividend) {
-                result = i+1;
+            if (temp == dividend) {
+                result = i + 1;
                 break;
             }
-            if(temp<dividend) {
+            if (temp < dividend) {
                 result = i;
                 break;
             }
-            temp = temp+divisor;
+            temp = temp + divisor;
         }
-        if(makeNegative) {
+        if (makeNegative) {
             result = (~result) + 1;
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        System.out.print(divide(-2147483648, -1));
     }
 }
