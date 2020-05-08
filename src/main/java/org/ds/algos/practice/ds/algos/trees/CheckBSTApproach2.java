@@ -2,13 +2,13 @@ package org.ds.algos.practice.ds.algos.trees;
 
 public class CheckBSTApproach2 {
     public boolean checkBST_BestWay(Tree.Node root, Integer min, Integer max) {
-        if(root == null)
+        if (root == null)
             return true;
 
-        if ((min!=null && root.data<min) || (max!=null && root.data>max))
+        if ((min != null && root.data < min) || (max != null && root.data > max))
             return false;
 
-        if(!checkBST_BestWay(root.left, min, root.data) || !checkBST_BestWay(root.right, root.data, max)) {
+        if (!checkBST_BestWay(root.left, min, root.data) || !checkBST_BestWay(root.right, root.data, max)) {
             return false;
         }
 

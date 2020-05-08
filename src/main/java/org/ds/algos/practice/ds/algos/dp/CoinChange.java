@@ -22,21 +22,21 @@ public class CoinChange {
          * Solution for N
          */
         // Create a memo to avoid recomputations
-        int[] dp = new int[amount+1];
+        int[] dp = new int[amount + 1];
         // We do not know if it is even possible to added MAX into each place
-        Arrays.fill(dp, amount+1);
+        Arrays.fill(dp, amount + 1);
         // Sorted the array to make checking efficient
         Arrays.sort(coins);
         dp[0] = 0;
         // Compute optimal solution for each coin
-        for(int i=0;i<=amount; i++) {
+        for (int i = 0; i <= amount; i++) {
             // check each coin for finding the optimal solution
-            for(int j=0;j<coins.length;j++) {
+            for (int j = 0; j < coins.length; j++) {
                 // Only if the current coin is less then the amount we are checking then we can try putting it in
-                if(coins[j]<=i) {
+                if (coins[j] <= i) {
                     // This basically means that try to find the minimum for amount - coin at hand and if that is
                     // minimum than the current, we have a new optimal solution.
-                    dp[i] = Math.min(dp[i], 1 + dp[i-coins[j]]);
+                    dp[i] = Math.min(dp[i], 1 + dp[i - coins[j]]);
                     /**
                      * consider this say in current iteration iAmount is being calculated
                      * the coin at hand is X
@@ -50,10 +50,10 @@ public class CoinChange {
             }
         }
 
-        return dp[amount]<amount+1? dp[amount]:-1;
+        return dp[amount] < amount + 1 ? dp[amount] : -1;
     }
 
     public static void main(String[] args) {
-        System.out.println(new CoinChange().coinChange(new int[]{1,2,5}, 11));
+        System.out.println(new CoinChange().coinChange(new int[]{1, 2, 5}, 11));
     }
 }

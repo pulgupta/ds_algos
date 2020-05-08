@@ -20,12 +20,12 @@ public class FindPathIterative {
         // Go to each node and put that node in the stack
         // Next search for all the children of that node and if we find a match we have a path
 
-        if(root == null)
+        if (root == null)
             return null;
 
         levelOderTraversal.add(root);
 
-        while (levelOderTraversal!=null) {
+        while (levelOderTraversal != null) {
 
         }
 

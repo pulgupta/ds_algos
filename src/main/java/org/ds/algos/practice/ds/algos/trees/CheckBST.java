@@ -8,28 +8,29 @@ public class CheckBST {
      * Check if the tree is a BST or not
      * Time Complexity O(n)
      * Space Complexity O(1)
+     *
      * @param root
      * @return
      */
     public boolean checkBST(Tree.Node root) {
 
-        if(root == null)
+        if (root == null)
             return true;
 
-        if(!checkBST(root.left))
+        if (!checkBST(root.left))
             return false;
 
         /**
          * This will check if the previous encountered data
          * is less than the current data.
          */
-        if(previous != null && previous.data > root.data) {
+        if (previous != null && previous.data > root.data) {
             return false;
         } else {
             previous = root;
         }
 
-        if(!checkBST(root.right))
+        if (!checkBST(root.right))
             return false;
 
         return true;

@@ -2,8 +2,7 @@ package org.ds.algos.practice.ds.algos.trees;
 
 public class CheckTreeBalanceApproach2 {
 
-    boolean isBalanced(Tree.Node node)
-    {
+    boolean isBalanced(Tree.Node node) {
         int lh; /* for height of left subtree */
         int rh; /* for height of right subtree */
 
@@ -25,8 +24,7 @@ public class CheckTreeBalanceApproach2 {
         return false;
     }
 
-    int height(Tree.Node node)
-    {
+    int height(Tree.Node node) {
         /* base case tree is empty */
         if (node == null)
             return 0;

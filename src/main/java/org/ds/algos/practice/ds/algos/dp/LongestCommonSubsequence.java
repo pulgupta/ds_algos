@@ -9,33 +9,32 @@ public class LongestCommonSubsequence {
 
     // Complete the longestCommonSubsequence function below.
     static int[] longestCommonSubsequence(int[] a, int[] b) {
-        int[][] memo = new int[a.length+1][b.length+1];
-        for(int i=1; i<=a.length; i++){
-            for(int j=1; j<=b.length; j++){
-                if(a[i-1]==b[j-1]) {
-                    memo[i][j] = memo[i-1][j-1] + 1;
+        int[][] memo = new int[a.length + 1][b.length + 1];
+        for (int i = 1; i <= a.length; i++) {
+            for (int j = 1; j <= b.length; j++) {
+                if (a[i - 1] == b[j - 1]) {
+                    memo[i][j] = memo[i - 1][j - 1] + 1;
                 } else {
-                    memo[i][j] = Math.max(memo[i-1][j], memo[i][j-1]);
+                    memo[i][j] = Math.max(memo[i - 1][j], memo[i][j - 1]);
                 }
             }
         }
         // We have completed the memo, now lets traverse the path
         int count = memo[a.length][b.length];
         int[] result = new int[count];
-        int i=a.length;
-        int j=b.length;
-        while(i>0 && j>0){
-            if(a[i-1] == b[j-1]) {
-                    result[--count] = a[i-1];
-                    i--;
-                    j--;
-            } else if (memo[i-1][j] > memo[i][j-1]) {
-                i--; 
-            }
-            else {
+        int i = a.length;
+        int j = b.length;
+        while (i > 0 && j > 0) {
+            if (a[i - 1] == b[j - 1]) {
+                result[--count] = a[i - 1];
+                i--;
                 j--;
-            } 
-        } 
+            } else if (memo[i - 1][j] > memo[i][j - 1]) {
+                i--;
+            } else {
+                j--;
+            }
+        }
         return result;
     }
 

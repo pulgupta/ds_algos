@@ -11,9 +11,9 @@ public class BigNumberSorting {
     // For this reason we are doing number comparisions ourselves and rest is left to String Comparator.
     static class MyComparator implements Comparator<String> {
         public int compare(String a, String b) {
-            if(a.length()> b.length())
+            if (a.length() > b.length())
                 return 1;
-            else if(a.length() < b.length())
+            else if (a.length() < b.length())
                 return -1;
             else {
                 return a.compareTo(b);
@@ -36,7 +36,7 @@ public class BigNumberSorting {
                 "1",
         };
         String[] result = sorting(array);
-        for(String i: result)
+        for (String i : result)
             System.out.print(i + " ");
     }
 

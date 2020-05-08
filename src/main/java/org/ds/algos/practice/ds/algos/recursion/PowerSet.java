@@ -14,10 +14,10 @@ public class PowerSet {
     void getPowerSetOfString(int current, int[] bits, List<List<Integer>> bitStrings) {
 
         // Base condition to check if current has become next
-        if(current == bits.length) {
+        if (current == bits.length) {
 
             List<Integer> newAddition = new ArrayList<>();
-            for(int i: bits){
+            for (int i : bits) {
                 newAddition.add(i);
             }
             bitStrings.add(newAddition);
@@ -25,10 +25,10 @@ public class PowerSet {
             // Try both the scenarios
             // Make current as 1 for the first time
             bits[current] = 1;
-            getPowerSetOfString(current+1, bits, bitStrings);
+            getPowerSetOfString(current + 1, bits, bitStrings);
             // Make current as 0 for the second time
             bits[current] = 0;
-            getPowerSetOfString(current+1, bits, bitStrings);
+            getPowerSetOfString(current + 1, bits, bitStrings);
         }
     }
 
@@ -39,9 +39,9 @@ public class PowerSet {
         PowerSet powerSet = new PowerSet();
         powerSet.getPowerSetOfString(0, bits, bitStrings);
 
-        for(List<Integer> list: bitStrings) {
-            for(int i=0;i<list.size();i++) {
-                if(list.get(i)==1)
+        for (List<Integer> list : bitStrings) {
+            for (int i = 0; i < list.size(); i++) {
+                if (list.get(i) == 1)
                     System.out.print(data.charAt(i));
             }
             System.out.println();

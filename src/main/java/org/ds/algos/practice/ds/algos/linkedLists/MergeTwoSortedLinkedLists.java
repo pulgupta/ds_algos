@@ -50,7 +50,7 @@ public class MergeTwoSortedLinkedLists {
                 // insert the element from the stationary list into the running list
                 Node temp = stationaryPointer;
                 stationaryPointer = stationaryPointer.next;
-                Node temp2= runningPointer.next;
+                Node temp2 = runningPointer.next;
                 runningPointer.next = temp;
                 temp.next = temp2;
             }
@@ -77,7 +77,7 @@ public class MergeTwoSortedLinkedLists {
         Node temp = head;
         while (temp != null) {
             System.out.print(temp.value);
-            if(temp.next!=null) {
+            if (temp.next != null) {
                 System.out.print("->");
             }
             temp = temp.next;

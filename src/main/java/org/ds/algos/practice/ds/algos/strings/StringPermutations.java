@@ -3,12 +3,12 @@ package org.ds.algos.practice.ds.algos.strings;
 public class StringPermutations {
 
     public static void printPermutations(String str, int low, int high) {
-        if(low == high)
+        if (low == high)
             System.out.println(str);
         else {
-            for(int i=low;i<=high;i++){
+            for (int i = low; i <= high; i++) {
                 str = swap(str, low, i);
-                printPermutations(str, low+1, high);
+                printPermutations(str, low + 1, high);
                 str = swap(str, low, i);
             }
         }
