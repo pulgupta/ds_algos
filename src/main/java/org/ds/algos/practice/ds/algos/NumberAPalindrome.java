@@ -7,23 +7,10 @@ package org.ds.algos.practice.ds.algos;
  */
 public class NumberAPalindrome {
 
-    public static void main(String[] args) {
-        int number1 = 7982897;
-        int number2 = 1991;
-        int number3 = 8954;
-        int number4 = 121;
-        int number5 = 1;
-        System.out.println(isPalindrome(number1));
-        System.out.println(isPalindrome(number2));
-        System.out.println(isPalindrome(number3));
-        System.out.println(isPalindrome(number4));
-        System.out.println(isPalindrome(number5));
-    }
-
     // The idea here it to get the left key and the right key
     // If always both the key matches then we are good.
     // If at any time they are not matching then we can return false
-    private static boolean isPalindrome(int num) {
+    public boolean isPalindrome(int num) {
 
         int places = Integer.toString(num).length();
         int powerRhs = 1;
@@ -44,7 +31,6 @@ public class NumberAPalindrome {
 
         return true;
     }
-
 
     static int calculatePow(int num, int pow) {
         int temp = num;

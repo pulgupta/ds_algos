@@ -8,21 +8,25 @@ package org.ds.algos.practice.ds.algos.sorting;
  */
 public class MergeSort {
 
-    static int[] arr = {3, 2, 5, 7, 1, 4, 6};
     // Merge sort will require a temp array in case of arrays.
     // We could have avoided it if we were using linked lists and this is the reason
     // merge sort is better for sorting linkedLists
-    static int[] tempMergArr = new int[arr.length];
+    private int[] tempMergArr;
 
-    public static void mergeSort(int low, int high) {
+    public int[] sort(int[] arr) {
+        tempMergArr = new int[arr.length];
+        this.mergeSort(0, arr.length-1, arr);
+        return arr;
+    }
+    private void mergeSort(int low, int high, int[] arr) {
         if (high > low) {
             int middle = (low + high) / 2; // Divide the array into two equal part
 
-            mergeSort(low, middle);
-            mergeSort(middle + 1, high);
+            mergeSort(low, middle, arr);
+            mergeSort(middle + 1, high, arr);
 
             // Merge the two sub arrays
-            merge(low, middle, high);
+            merge(low, middle, high, arr);
         }
     }
 
@@ -34,7 +38,7 @@ public class MergeSort {
             middle+1 will be the starting index of the second array
         @param higherIndex: last index of the second subarray
     */
-    public static void merge(int lowerIndex, int middle, int higherIndex) {
+    private void merge(int lowerIndex, int middle, int higherIndex, int[] arr) {
 
         // First get the elements into the temp array
         // This helps as now we will not loose the data
@@ -73,13 +77,6 @@ public class MergeSort {
             arr[k] = tempMergArr[j];
             k++;
             j++;
-        }
-    }
-
-    public static void main(String args[]) {
-        mergeSort(0, arr.length - 1);
-        for (int a : arr) {
-            System.out.println(a);
         }
     }
 }
