@@ -19,14 +19,5 @@ public class ArraySortedCheckRec {
         }
         return isSorted(arr, index + 1);
     }
-
-    public static void main(String[] args) {
-
-        int sortedArray[] = {3, 9, 45, 45, 88};
-        int unsortedArray[] = {3, 9, 45, 1, 88};
-        System.out.println(isSorted(sortedArray, 0));
-        System.out.println(isSorted(unsortedArray, 0));
-
-    }
 }
 
