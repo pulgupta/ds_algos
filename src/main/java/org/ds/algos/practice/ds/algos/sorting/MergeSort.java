@@ -14,10 +14,17 @@ public class MergeSort {
     private int[] tempMergArr;
 
     public int[] sort(int[] arr) {
+        if (arr == null) {
+            throw new IllegalArgumentException();
+        }
+        if (arr.length == 0 || arr.length == 1) {
+            return arr;
+        }
         tempMergArr = new int[arr.length];
-        this.mergeSort(0, arr.length-1, arr);
+        this.mergeSort(0, arr.length - 1, arr);
         return arr;
     }
+
     private void mergeSort(int low, int high, int[] arr) {
         if (high > low) {
             int middle = (low + high) / 2; // Divide the array into two equal part

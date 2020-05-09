@@ -6,7 +6,7 @@ package org.ds.algos.practice.ds.algos.arrays;
  *
  * @author pulgupta
  */
-public class CountArrayFrequenciesInOOfn {
+public class CountArrayFrequenciesIn_On {
 
     public static int[] calculateFrequencies(int[] arr) {
         /*
@@ -15,14 +15,14 @@ public class CountArrayFrequenciesInOOfn {
         int i = 0;
         while (i < arr.length) {
             // If the index has negative value then we already have a count
-            if (arr[i] < 0) {
+            if (arr[i] <= 0) {
                 i++;
             } else {
                 int index = arr[i] - 1;
                 // We can increment the count
                 if (arr[index] < 0) {
                     arr[index]--;
-                    arr[i] = 0;
+                    arr[i] = 0; // Since we have counted it so we can remove it from the array
                     i++;
                 } else {
                     // Swap the number to current, and set -1 as the count
@@ -31,17 +31,10 @@ public class CountArrayFrequenciesInOOfn {
                 }
             }
         }
-
-        return arr;
-    }
-
-    public static void main(String args[]) {
-
-        int arr[] = {5, 4, 5, 3, 1, 1, 4};
-        arr = calculateFrequencies(arr);
-        for (int i : arr) {
-            System.out.print(i * -1 + " ");
+        for (i = 0; i < arr.length; i++) {
+            arr[i] = arr[i] * -1;
         }
+        return arr;
     }
 
 }

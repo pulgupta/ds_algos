@@ -25,4 +25,15 @@ class MergeSortTest {
         assertArrayEquals(sortedArray, mergeSort.sort(sortedArray));
     }
 
+    @Test
+    void shouldHandleEmptyArrayWithoutError() {
+        int[] sortedArray = {};
+        assertArrayEquals(sortedArray, mergeSort.sort(sortedArray));
+    }
+
+    @Test
+    void shouldThrowExceptionForNullArray() {
+        assertThrows(IllegalArgumentException.class, () -> mergeSort.sort(null));
+    }
+
 }
