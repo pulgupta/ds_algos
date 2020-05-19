@@ -117,9 +117,14 @@ public class Dijkstra {
 
             for (int i = 0; i < N; i++) {
                 if (adjMatrix[node][i] != Integer.MAX_VALUE && s != i) {
-
-                    if (solution[i] > solution[node] + adjMatrix[node][i])
+                    /**
+                     * The main logic of maintaining shortest distance on some
+                     * node which we have already seen as we will again visit
+                     * the solution array to update its distances
+                     */
+                    if (solution[i] > solution[node] + adjMatrix[node][i]) {
                         solution[i] = solution[node] + adjMatrix[node][i];
+                    }
                     // If the target node i is not in the queue we will add it with its updated distance
                     Distance newNode = new Distance(i, solution[i]);
                     if (!visited[i] && !queue.contains(newNode)) {
@@ -154,4 +159,3 @@ public class Dijkstra {
         System.out.println();
     }
 }
-
