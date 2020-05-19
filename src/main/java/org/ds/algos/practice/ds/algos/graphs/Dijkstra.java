@@ -117,11 +117,7 @@ public class Dijkstra {
 
             for (int i = 0; i < N; i++) {
                 if (adjMatrix[node][i] != Integer.MAX_VALUE && s != i) {
-                    /**
-                     * The main logic of maintaining shortest distance on some
-                     * node which we have already seen as we will again visit
-                     * the solution array to update its distances
-                     */
+                    // Update the distances of the node adjacent to the currently popped node
                     if (solution[i] > solution[node] + adjMatrix[node][i]) {
                         solution[i] = solution[node] + adjMatrix[node][i];
                     }
