@@ -32,7 +32,7 @@ public class CoinChange {
         for (int i = 0; i <= amount; i++) {
             // check each coin for finding the optimal solution
             for (int j = 0; j < coins.length; j++) {
-                // Only if the current coin is less then the amount we are checking then we can try putting it in
+                // Only if the current coin is less than the amount we are checking then we can try putting it in
                 if (coins[j] <= i) {
                     // This basically means that try to find the minimum for amount - coin at hand and if that is
                     // minimum than the current, we have a new optimal solution.
