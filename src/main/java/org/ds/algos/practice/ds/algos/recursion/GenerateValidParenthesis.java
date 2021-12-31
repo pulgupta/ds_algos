@@ -14,15 +14,15 @@ public class GenerateValidParenthesis {
     }
 
     void placeParenthesis(String sb, int left, int right) {
-        if(left == 0 && right == 0) {
+        if (left == 0 && right == 0) {
             result.add(sb);
         }
 
-        if(left > 0)
-            placeParenthesis(sb + "(", left-1, right);
+        if (left > 0)
+            placeParenthesis(sb + "(", left - 1, right);
 
         // This will ensure that we are not closing a brace before it is opened
-        if(right > left)
-            placeParenthesis(sb + ")", left, right-1);
+        if (right > left)
+            placeParenthesis(sb + ")", left, right - 1);
     }
 }

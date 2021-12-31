@@ -2,7 +2,7 @@ package org.ds.algos.practice.ds.algos.trees;
 
 import java.util.Stack;
 
-import static org.ds.algos.practice.ds.algos.trees.Tree.*;
+import static org.ds.algos.practice.ds.algos.trees.Tree.Node;
 
 /**
  * The idea is simple.
@@ -26,7 +26,7 @@ public class TreeToDll {
             }
             temp = stack.pop();
             // Adding the head of the linked list
-            if(result == null) {
+            if (result == null) {
                 result = temp;
                 previous = temp;
             } else {

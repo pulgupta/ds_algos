@@ -17,7 +17,9 @@ public class RegexSearchInTrie {
         root = new Node();
     }
 
-    /** Adds a word into the data structure. */
+    /**
+     * Adds a word into the data structure.
+     */
     public void addWord(String word) {
         char[] wordArr = word.toCharArray();
         Node current = root;
@@ -31,7 +33,9 @@ public class RegexSearchInTrie {
         current.isEndOfWord = true;
     }
 
-    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
+    /**
+     * Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.
+     */
     public boolean search(String word) {
         return searchHelper(root, word);
     }
@@ -40,9 +44,9 @@ public class RegexSearchInTrie {
         char[] keyArr = word.toCharArray();
         for (int i = 0; i < keyArr.length; i++) {
             if (keyArr[i] == '.') {
-                for (int j=0;j<26;j++) {
-                    if(current.children[j] != null) {
-                        if(searchHelper(current.children[j], word.substring(i+1)))
+                for (int j = 0; j < 26; j++) {
+                    if (current.children[j] != null) {
+                        if (searchHelper(current.children[j], word.substring(i + 1)))
                             return true;
                     }
                 }

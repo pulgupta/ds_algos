@@ -13,26 +13,26 @@ public class ZigZagLevelOrderTraversal {
 
         List<List<Integer>> result = new ArrayList<>();
         int lvlCount = 0;
-        if(root == null)
+        if (root == null)
             return result;
 
         stack1.add(root);
 
-        while(!stack1.isEmpty() || !stack2.isEmpty()) {
+        while (!stack1.isEmpty() || !stack2.isEmpty()) {
             lvlCount++;
             List<Integer> level = new ArrayList<>();
             int itr = Math.max(stack1.size(), stack2.size());
 
-            for(int i=0; i<itr; i++) {
+            for (int i = 0; i < itr; i++) {
                 TreeNode processed;
 
-                if(lvlCount%2!=0)
-                    processed = stack1.remove(stack1.size()-1);
+                if (lvlCount % 2 != 0)
+                    processed = stack1.remove(stack1.size() - 1);
                 else
-                    processed = stack2.remove(stack2.size()-1);
+                    processed = stack2.remove(stack2.size() - 1);
 
                 level.add(processed.val);
-                if(lvlCount%2!=0) {
+                if (lvlCount % 2 != 0) {
                     addElement(lvlCount, processed.left);
                     addElement(lvlCount, processed.right);
                 } else {
@@ -49,8 +49,8 @@ public class ZigZagLevelOrderTraversal {
     }
 
     void addElement(int lvlCount, TreeNode node) {
-        if(node!=null) {
-            if(lvlCount%2!=0)
+        if (node != null) {
+            if (lvlCount % 2 != 0)
                 stack2.add(node);
             else
                 stack1.add(node);

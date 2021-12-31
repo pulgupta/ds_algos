@@ -8,6 +8,7 @@ public class MaximumProductSubArray {
      * The idea is that we will keep track of the min and max at each level. This way at each step we have the
      * result. It is bottom up way of DP. As we move forward we pick an element and multiply that with the previous
      * min and max.
+     *
      * @param nums
      * @return
      */
@@ -16,7 +17,7 @@ public class MaximumProductSubArray {
         int previousMax = nums[0];
         int previousMin = nums[0];
 
-        for(int i=1; i<nums.length; i++){
+        for (int i = 1; i < nums.length; i++) {
             int[] current = new int[3];
             current[0] = nums[i];
             current[1] = previousMax * nums[i];
@@ -26,7 +27,7 @@ public class MaximumProductSubArray {
             previousMax = current[2];
             previousMin = current[0];
 
-            if(previousMax > max)
+            if (previousMax > max)
                 max = previousMax;
         }
         return max;

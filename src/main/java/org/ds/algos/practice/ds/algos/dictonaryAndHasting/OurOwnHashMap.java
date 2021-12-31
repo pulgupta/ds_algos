@@ -14,7 +14,7 @@ public class OurOwnHashMap {
 
     public OurOwnHashMap() {
         data = new ArrayList<>();
-        for(int i=0; i<BUCKET_COUNT; i++) {
+        for (int i = 0; i < BUCKET_COUNT; i++) {
             List<Integer> newList = new ArrayList<>(0);
             data.add(newList);
         }
@@ -22,25 +22,27 @@ public class OurOwnHashMap {
 
     public void add(int key) {
         int hash = hash(key);
-        if(!contains(key))
+        if (!contains(key))
             data.get(hash).add(key);
     }
 
     public void remove(int key) {
         int hash = hash(key);
         List<Integer> bucket = data.get(hash);
-        for(int i=0; i<bucket.size(); i++) {
+        for (int i = 0; i < bucket.size(); i++) {
             if (bucket.get(i) == key)
                 bucket.remove(i);
         }
     }
 
-    /** Returns true if this set contains the specified element */
+    /**
+     * Returns true if this set contains the specified element
+     */
     public boolean contains(int key) {
         int hash = hash(key);
         List<Integer> bucket = data.get(hash);
-        for(int i: bucket) {
-            if(i == key)
+        for (int i : bucket) {
+            if (i == key)
                 return true;
         }
         return false;
