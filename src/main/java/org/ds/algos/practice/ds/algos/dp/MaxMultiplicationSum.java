@@ -28,14 +28,22 @@ public class MaxMultiplicationSum {
 
     int dpFun(int i, int left) {
         if (i == m.length) return 0;
+        /*
+        Since if we have done n operation out of which left is x we can easily calculate right operations
+        In a naive approach, we could have taken three state variables
+        right, left and the index but by deriving right from other state variable we have greatly reduced the number
+        of possible states and thus both the time and state complexity as both are directly proportional to the number
+        of states in a DP.
+         */
         int right = n.length - 1 - (i - left);
         if (dp[i][left] != 0) {
             return dp[i][left];
         }
-        // we can move forward by either removing left or by removing right and so we will
-        // try both the cases and will choose the optimum solution out of the two
-        dp[i][left] = Math.max(m[i] * n[left] + dpFun(i + 1, left + 1),
-                m[i] * n[right] + dpFun(i + 1, left));
+        /*
+        we can move forward by either removing left or by removing right, and so we will
+        try both the cases and will choose the optimum solution out of the two
+         */
+        dp[i][left] = Math.max(m[i] * n[left] + dpFun(i + 1, left + 1), m[i] * n[right] + dpFun(i + 1, left));
         return dp[i][left];
     }
 }
