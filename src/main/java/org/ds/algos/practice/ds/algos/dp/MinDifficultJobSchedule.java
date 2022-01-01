@@ -42,7 +42,7 @@ public class MinDifficultJobSchedule {
     recurrence relation:
         We can do tasks from i to n - (d-k) index on any kth day
         For each day we should try to minimise the hardness so our dp looks like
-        dp(i, k) = min(hardness, dp(j+1, d+1)) for all i<=j < n-(d-k)
+        dp(i, k) = min(hardness + dp(j+1, d+1)) for all i<=j < n-(d-k)
         where hardness = min(jobDifficulty[k]) for all i <= k <= j
     base case:
         when k == d we can just return the max value in the array starting at index i
