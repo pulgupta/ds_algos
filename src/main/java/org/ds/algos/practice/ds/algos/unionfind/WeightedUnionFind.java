@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds.algos.UnionFind;
+package org.ds.algos.practice.ds.algos.unionfind;
 
 import java.util.Scanner;
 
