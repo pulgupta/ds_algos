@@ -4,6 +4,7 @@ package org.ds.algos.practice.ds.algos.dp;
  * Returns maximum sum af non-adjacent sum in an array
  */
 public class MaxNonAdjacentSumInArray {
+    //Bottom up approach
     public static int maxSubsetSumNoAdjacent(int[] array) {
         // Edge cases
         if (array.length == 0) return 0;
@@ -18,4 +19,19 @@ public class MaxNonAdjacentSumInArray {
         }
         return dp[array.length - 1];
     }
+
+
+    // Top down approach
+    public static int maxSubsetSumNoAdjacentTopDown(int[] array) {
+        // Write your code here
+        if (array.length == 0) return 0;
+        return dp(array, array.length - 1);
+    }
+
+    static int dp(int[] array, int i) {
+        if (i <= 0) return array[0];
+        if (i == 1) return Math.max(array[0], array[1]);
+        return Math.max(dp(array, i - 1), dp(array, i - 2) + array[i]);
+    }
+
 }
