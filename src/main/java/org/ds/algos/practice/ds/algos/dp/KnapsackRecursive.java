@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds.algos.recursion;
+package org.ds.algos.practice.ds.algos.dp;
 
 /**
  * The idea is to check what is the maximum value we can achieve in the knapsack
@@ -7,7 +7,7 @@ package org.ds.algos.practice.ds.algos.recursion;
  * 2) We can add so we will increase the total value
  * 3) We can add but we will not as that is not a optimal solution
  */
-public class KnapsackProblem {
+public class KnapsackRecursive {
 
     public static int knapsack(int capacity, int n, int[] weights, int[] values) {
         if (capacity <= 0 || n == 0)
@@ -21,13 +21,5 @@ public class KnapsackProblem {
             // we can achieve. 1) By adding the item, 2) By not adding this item
             return Math.max(values[n] + knapsack(capacity - weights[n], n - 1, weights, values),
                     knapsack(capacity, n - 1, weights, values));
-    }
-
-    public static void main(String[] args) {
-        // Sorted in terms of weight. So the first element will have more value then the next
-        // We have two items with same weight but we can see that their values are different
-        int[] weights = {11, 8, 7, 6, 5, 5};
-        int[] values = {10, 8, 4, 3, 4, 2};
-        System.out.println(knapsack(20, 5, weights, values));
     }
 }
