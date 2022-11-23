@@ -2,23 +2,6 @@ package org.ds.algos.practice.ds.algos.trees;
 
 public class DiameterOfTree {
 
-    public int binaryTreeDiameter(BinaryTree tree) {
-        // Maximise the height of left tree + height of right tree
-        if (tree == null) return 0;
-
-        int leftHeight = height(tree.left);
-        int rightHeight = height(tree.right);
-        int total = leftHeight + rightHeight;
-
-        int height1 = Math.max(binaryTreeDiameter(tree.left), binaryTreeDiameter(tree.right));
-        return Math.max(total, height1);
-    }
-
-    int height(BinaryTree tree) {
-        if (tree == null) return 0;
-        return 1 + Math.max(height(tree.left), height(tree.right));
-    }
-
     static class BinaryTree {
         public int value;
         public BinaryTree left = null;
@@ -27,5 +10,32 @@ public class DiameterOfTree {
         public BinaryTree(int value) {
             this.value = value;
         }
+    }
+
+    static class TreeInfo {
+        public int height;
+        public int diameter;
+
+        public TreeInfo(int height, int diameter) {
+            this.height = height;
+            this.diameter = diameter;
+        }
+    }
+
+    public int binaryTreeDiameter(BinaryTree tree) {
+        return getTreeInfo(tree).diameter;
+    }
+
+    TreeInfo getTreeInfo(BinaryTree tree) {
+        if(tree == null) return new TreeInfo(0, 0);
+
+        TreeInfo leftInfo = getTreeInfo(tree.left);
+        TreeInfo rightInfo = getTreeInfo(tree.right);
+
+        int totalHeight = leftInfo.height + rightInfo.height;
+        int finalDiameter = Math.max(totalHeight, Math.max(leftInfo.diameter, rightInfo.diameter));
+        int height = 1 + Math.max(leftInfo.height, rightInfo.height);
+
+        return new TreeInfo(height, finalDiameter);
     }
 }
