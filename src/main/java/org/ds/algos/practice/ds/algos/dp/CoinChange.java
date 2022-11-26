@@ -53,6 +53,28 @@ public class CoinChange {
         return dp[amount] < amount + 1 ? dp[amount] : -1;
     }
 
+    public static int minNumberOfCoinsForChange(int n, int[] denoms) {
+
+        int[][] dp = new int[denoms.length + 1][n + 1];
+        for(int j=1; j<=n; j++) dp[0][j] = Integer.MAX_VALUE;
+
+        for (int i=1; i<=denoms.length; i++) {
+            for(int j=1; j<=n; j++) {
+                int value = denoms[i-1];
+                if (j - value < 0 || dp[i][j-value] == Integer.MAX_VALUE) {
+                    dp[i][j] = dp[i-1][j];
+                } else {
+                    dp[i][j] = Math.min(1 + dp[i][j-value], dp[i-1][j]);
+                }
+            }
+        }
+        int min = Integer.MAX_VALUE;
+        for(int i=0; i<=denoms.length; i++) {
+            min = Math.min(dp[i][n], min);
+        }
+        return min == Integer.MAX_VALUE? -1: min;
+    }
+
     public static void main(String[] args) {
         System.out.println(new CoinChange().coinChange(new int[]{1, 2, 5}, 11));
     }
