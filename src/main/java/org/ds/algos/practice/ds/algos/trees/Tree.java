@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Tree {
 
-    static class Node implements Comparable<Node> {
-        int data;
-        Node left;
-        Node right;
+    public static class Node implements Comparable<Node> {
+        public int data;
+        public Node left;
+        public Node right;
 
         public Node() {
             super();

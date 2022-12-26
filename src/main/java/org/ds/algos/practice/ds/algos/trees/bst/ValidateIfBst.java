@@ -1,4 +1,6 @@
-package org.ds.algos.practice.ds.algos.trees;
+package org.ds.algos.practice.ds.algos.trees.bst;
+
+import org.ds.algos.practice.ds.algos.trees.Tree;
 
 public class ValidateIfBst {
     public boolean checkBst(Tree.Node root, Integer min, Integer max) {

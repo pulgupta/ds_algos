@@ -1,5 +1,6 @@
 package org.ds.algos.practice.ds.algos.trees;
 
+import org.ds.algos.practice.ds.algos.trees.bst.ValidateIfBst;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
