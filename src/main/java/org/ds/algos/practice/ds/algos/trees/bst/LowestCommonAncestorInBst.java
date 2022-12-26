@@ -1,6 +1,8 @@
-package org.ds.algos.practice.ds.algos.trees;
+package org.ds.algos.practice.ds.algos.trees.bst;
 
-public class LowestCommonAncestorInBST {
+import org.ds.algos.practice.ds.algos.trees.Tree;
+
+public class LowestCommonAncestorInBst {
 
     public static int getLowestCommonAncestor(Tree.Node root, int firstKey, int secondKey) {
         if (firstKey > secondKey) {
@@ -20,6 +22,6 @@ public class LowestCommonAncestorInBST {
     public static void main(String[] args) {
         Tree tree = new Tree();
         Tree.Node rootBST = tree.createBST();
-        System.out.println(LowestCommonAncestorInBST.getLowestCommonAncestor(rootBST, 1, 3));
+        System.out.println(LowestCommonAncestorInBst.getLowestCommonAncestor(rootBST, 1, 3));
     }
 }

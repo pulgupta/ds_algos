@@ -1,4 +1,4 @@
-package org.ds.algos.practice.ds.algos.trees;
+package org.ds.algos.practice.ds.algos.trees.bst;
 
 public class BstAllOperations {
     static class BST {
