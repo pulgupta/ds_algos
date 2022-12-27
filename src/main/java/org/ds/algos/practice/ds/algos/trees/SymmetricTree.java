@@ -3,6 +3,16 @@ package org.ds.algos.practice.ds.algos.trees;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ *  Symmetric tree is a tree where the left sub-tree is the mirror image of the right sub-tree
+ *  Example:
+ *              1
+ *           /    \
+ *          2     2
+ *        /  \   /  \
+ *       3   4  4   3
+ *
+ */
 public class SymmetricTree {
     public boolean isSymmetricTree(Tree.Node tree) {
         Queue<Tree.Node> q1 = new LinkedList<>();

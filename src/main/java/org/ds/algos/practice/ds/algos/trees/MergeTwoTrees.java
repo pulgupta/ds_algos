@@ -2,6 +2,10 @@ package org.ds.algos.practice.ds.algos.trees;
 
 import static org.ds.algos.practice.ds.algos.trees.Tree.*;
 
+/**
+ * We have two separate thees. Given the root nodes of the two trees
+ * merge the two trees into a new tree
+ */
 public class MergeTwoTrees {
     public Node mergeBinaryTrees(Node tree1, Node tree2) {
         Node newNode = null;
