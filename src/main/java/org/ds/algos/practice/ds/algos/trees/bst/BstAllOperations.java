@@ -47,7 +47,7 @@ public class BstAllOperations {
             return this;
         }
 
-        BST remove(BST node, int value) {
+        private BST remove(BST node, int value) {
             System.out.println("node " + node.value);
             if(node.value == value) {
                 if(node.left == null && node.right == null) {

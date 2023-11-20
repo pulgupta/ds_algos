@@ -2,6 +2,8 @@ package org.ds.algos.practice.ds.algos.trees.bst;
 
 import org.ds.algos.practice.ds.algos.trees.Tree;
 
+@Deprecated
+// Refer to BstAllOperations
 public class BstInsertDelete {
 
     /**
