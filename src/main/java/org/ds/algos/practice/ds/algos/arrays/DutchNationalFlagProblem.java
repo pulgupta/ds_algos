@@ -13,23 +13,22 @@ public class DutchNationalFlagProblem {
         while (mid <= high) {
             // Start with the middle element
             switch (arr[mid]) {
-                // If mid is zero we need to swap it to the left
                 case 0:
-                    // Swap low and mid
                     swap(arr, mid, low);
+                    // increment low as we have set zero correctly and all elements before low are zeros
                     low++;
+                    // increment mid as we are sure that low was at one, just after all the zeros
+                    // incrementing mid will move mid to next element of 1 so all elements on left are sorted correctly
                     mid++;
-                    break;
-                // If mid is 1 this means it is in the right place, lets analyse the next element
                 case 1:
                     mid++;
                     break;
-                // If mid == 2 we will have to swap it to the right and
-                // because we are not sure what will be the value at the right, we do not increment mid
                 case 2:
                     // Swap mid and high
                     swap(arr, mid, high);
+                    // Since we have moved two to high lets decrement high to the next candidate for swap
                     high--;
+                    // because we are not sure what will be the value at the right, we do not increment mid
                     break;
             }
         }
