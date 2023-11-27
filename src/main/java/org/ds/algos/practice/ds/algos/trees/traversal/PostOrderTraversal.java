@@ -2,11 +2,15 @@ package org.ds.algos.practice.ds.algos.trees.traversal;
 
 import org.ds.algos.practice.ds.algos.trees.Tree;
 
-import java.security.KeyPair;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+
+/**
+ * @author pulgupta
+ * Solution validated on https://leetcode.com/problems/binary-tree-postorder-traversal
+ */
 public class PostOrderTraversal {
     public void getPostorderRecursively(Tree.Node root, List<Integer> list) {
         if (root == null) {
@@ -32,7 +36,7 @@ public class PostOrderTraversal {
         stack.push(new StackData(node, false));
         while (!stack.isEmpty()) {
             StackData current = stack.pop();
-            if(current.visited) {
+            if (current.visited) {
                 list.add(current.node.data);
             } else {
                 stack.push(new StackData(current.node, true));
