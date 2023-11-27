@@ -12,22 +12,22 @@ import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.core.Is.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-class InorderTraversalTest {
+class PreorderTraversalTest {
 
     Tree tree = new Tree();
-    InorderTraversal inorderTraversal = new InorderTraversal();
+    PreorderTraversal preorderTraversal = new PreorderTraversal();
 
     @Test
     void shouldGetCorrectInorderRecursively() {
         Tree.Node root = tree.createTree();
         ArrayList<Integer> result = new ArrayList<>();
-        inorderTraversal.getInorderRecursively(root, result);
-        assertThat(result, is(Arrays.asList(3, 2, 4, 1, 5)));
+        preorderTraversal.getPreorderRecursively(root, result);
+        assertThat(result, is(Arrays.asList(1, 2, 3, 4, 5)));
     }
 
     @Test
     void shouldGetCorrectInorderIteratively() {
         Tree.Node root = tree.createTree();
-        assertThat(inorderTraversal.getInorderIteratively(root), is(Arrays.asList(3, 2, 4, 1, 5)));
+        assertThat(preorderTraversal.getPreorderIteratively(root), is(Arrays.asList(1, 2, 3, 4, 5)));
     }
 }

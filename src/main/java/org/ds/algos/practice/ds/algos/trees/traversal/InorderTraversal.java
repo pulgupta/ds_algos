@@ -26,9 +26,9 @@ public class InorderTraversal {
      */
     public List<Integer> getInorderIteratively(Node node) {
         List<Integer> list = new ArrayList();
-        Stack<Node> stack = new Stack<Node>();
+        Stack<Node> stack = new Stack<>();
         if (node == null)
-            return null;
+            return list;
         Node current = node;
         while (!stack.isEmpty() || current != null) {
             while (current != null) {
