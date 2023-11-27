@@ -18,7 +18,7 @@ class PreorderTraversalTest {
     PreorderTraversal preorderTraversal = new PreorderTraversal();
 
     @Test
-    void shouldGetCorrectInorderRecursively() {
+    void shouldGetCorrectPreorderRecursively() {
         Tree.Node root = tree.createTree();
         ArrayList<Integer> result = new ArrayList<>();
         preorderTraversal.getPreorderRecursively(root, result);
@@ -26,7 +26,7 @@ class PreorderTraversalTest {
     }
 
     @Test
-    void shouldGetCorrectInorderIteratively() {
+    void shouldGetCorrectPreorderIteratively() {
         Tree.Node root = tree.createTree();
         assertThat(preorderTraversal.getPreorderIteratively(root), is(Arrays.asList(1, 2, 3, 4, 5)));
     }
